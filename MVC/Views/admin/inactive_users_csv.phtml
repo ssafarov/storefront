@@ -1,0 +1,12 @@
+id, name, email, lastlogin, registered
+<?php foreach ($result as $item) {
+    $date = [
+        $item->ID,
+        $item->user_nicename,
+        $item->user_email,
+        $item->last_login ? date('Y-m-d H:i:s', $item->last_login) : 'never',
+        date('Y-m-d H:i:s', strtotime($item->user_registered))
+    ];
+
+    echo implode(', ', $date) . "\r\n";
+}

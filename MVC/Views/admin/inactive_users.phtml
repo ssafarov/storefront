@@ -1,0 +1,19 @@
+<h3>Inactive users</h3>
+
+<form method="POST">
+    Date: <input type="text" name="date" value="<?= $date ?>">
+    <input type="submit" value="Show">
+    <input type="submit" name="inactive_users_csv" value="CSV">
+</form>
+
+<div>
+    <?php foreach ($result as $item): ?>
+        <div>
+            <?= $item->ID ?> |
+            <?= $item->user_nicename ?> |
+            <?= $item->user_email ?> |
+            <?= $item->last_login ? date('Y-m-d H:i:s', $item->last_login) : 'never' ?>
+        </div>
+    <?php endforeach; ?>
+    ...
+</div>

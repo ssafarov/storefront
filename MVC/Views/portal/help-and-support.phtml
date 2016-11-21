@@ -1,0 +1,39 @@
+<h1><?php _e('Help and support', 'storefront'); ?></h1>
+
+<?php the_content(); ?>
+
+<?php if (have_rows('help_and_support')) : ?>
+    <?php while (have_rows('help_and_support')) : the_row(); ?>
+        <?php if (get_row_layout() == 'help_and_support_tab') : ?>
+<!--            <div class="row visible-sm-block visible-md-block visible-lg-block">-->
+<!--                --><?php //if (have_rows('videos')) : ?>
+<!--                    --><?php //while (have_rows('videos')) : the_row(); ?>
+<!--                        <div class="col-xs-12 col-sm-4">-->
+<!--                            --><?php //echo do_shortcode(' [wp_lightbox_fancybox_youtube_video link="' . get_sub_field('video_link') . '" source="' . get_sub_field('video_thumbnail') . '"] '); ?>
+<!--                        </div>-->
+<!--                    --><?php //endwhile ?>
+<!--                --><?php //endif; ?>
+<!--            </div>-->
+            <?php if (have_rows('top_faqs')) : ?>
+                <h3><?php _e('Top questions', 'storefront'); ?></h3>
+                <ol class="top-questions">
+                    <?php while (have_rows('top_faqs')) : the_row(); ?>
+                        <li><a href="<?php the_sub_field('faq_link'); ?>"><?php the_sub_field('faq_title'); ?></a></li>
+                    <?php endwhile; ?>
+                </ol>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+<div class="row visible-xs-block">
+    <div class="col-xs-12">
+        <a class="btn btn-secondary" href="https://www.youtube.com/user/Fuel3DScanner" target="_blank"><?php _e('Visit our Youtube', 'storefront'); ?></a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-8 col-md-offset-2"><br><br>
+        <?php echo do_shortcode('[contact-form-7 id="96760" title="User Portal Help & Support"]'); ?>
+    </div>
+</div>

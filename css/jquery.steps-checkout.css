@@ -1,0 +1,675 @@
+/****Fuel 3D styles based on Classic style of wizard **/
+
+
+/* SERVICE */
+h3.subhead{
+    margin-top: 1rem;
+}
+div.splitter {
+    margin-left: -5em!important;
+    width: 110%!important;
+}
+.column-login-form, .column-no-login {
+    padding: 30px;
+    margin-left: 0;
+    padding-right: 40px;
+}
+.column-no-login{
+    margin-top: 100px;
+}
+.required {
+    color: #b81c23;
+    padding-right: 5px;
+}
+.border-right{
+    border-right: 2px solid #eee;
+}
+.form-group .lost_password {
+    margin-bottom: 0;
+}
+.steps .error
+{
+    border: none!important;
+}
+.form-row {
+    margin: 0 0 1rem;
+}
+/* WIZARD */
+/*#wizard #place_order, .woocommerce-billing-fields > h3{display:none}*/
+.woocommerce #payment div.form-row, .woocommerce-page #payment div.form-row{border-top: none;padding:0}
+#ship-to-different-address{margin:0}
+.woocommerce #payment ul.payment_methods, .woocommerce-page #payment ul.payment_methods{border-bottom:none;padding-bottom:5px
+}
+.wizard,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a
+{
+    outline: 0;
+}
+.login-box ul,
+.wizard ul,
+.tabcontrol ul
+{
+    list-style: none !important;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+    top: -999em;
+}
+
+form.login .button, .woocommerce form.login input[type="submit"],
+.column-no-login > .actions ul li a{
+    background: #9ac31c;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #9ac31c;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 16px;
+} 
+
+/*
+    Wizard
+*/
+
+.wizard > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard > .steps .number
+{
+    font-size: 1.12em;
+    display: block;
+    color: #fff;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+.wizard > .steps .disabled .number {
+    color: #444;
+
+}
+
+.wizard.five-steps > .steps > ul > li
+{
+    width: 20%;
+}
+
+.wizard.three-steps > .steps > ul > li
+{
+    width: 33.33333%;
+}
+
+.wizard > .steps > ul > li
+{
+    width: 25%;
+}
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li
+{
+    float: left;
+    margin-left: 0;
+}
+
+.wizard.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+    height: 68px;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active
+{
+    display: block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active
+{
+    background: url('../images/checkout/chtabw.png') #eee center 0 no-repeat;
+    color: #444;
+    cursor: default;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active
+{
+    background: url('../images/checkout/chtabw.png') #9ac31c center 0 no-repeat;
+    color: #9ac31c;
+    cursor: default;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active
+{
+    background: url('../images/checkout/chtabw.png') #9ac31c center 0 no-repeat;
+    color: #9ac31c;
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active
+{
+    color: #b81c23!important;
+    background: url('../images/checkout/chtabw.png') #b81c23 center 0 no-repeat!important;
+}
+
+.three-steps > .steps .error a,
+.three-steps > .steps .error a:hover,
+.three-steps > .steps .error a:active
+{
+    color: #b81c23!important;
+    background: url('../images/checkout/chtabw.png') #b81c23 center 0 no-repeat!important;
+}
+
+.three-steps > .steps .disabled a,
+.three-steps > .steps .disabled a:hover,
+.three-steps > .steps .disabled a:active
+{
+    background: url('../images/checkout/chtabw.png') #eee center 0 no-repeat!important;
+    color: #444;
+    cursor: default;
+}
+
+.three-steps > .steps .current a,
+.three-steps > .steps .current a:hover,
+.three-steps > .steps .current a:active
+{
+    background: url('../images/checkout/chtabw.png') #9ac31c center 0 no-repeat;
+    color: #9ac31c;
+    cursor: default;
+}
+
+.three-steps > .steps .done a,
+.three-steps > .steps .done a:hover,
+.three-steps > .steps .done a:active
+{
+    background: url('../images/checkout/chtabw.png') #9ac31c center 0 no-repeat;
+    color: #9ac31c;
+}
+
+
+.wizard > .content
+{    
+    display: block;
+    margin: 0;
+    /*    min-height: 35em;*/
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.wizard.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard > .content > .body
+{
+    float: left;
+    /*    position: absolute;*/
+    height: 95%;
+    padding: 0%;
+    width: 100%; 
+}
+
+.wizard > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.wizard > .content > .body ul > li
+{
+    display: list-item;
+}
+
+.login-step > .login > .login-box > .column-no-login > .actions ul
+{
+    list-style: none !important;
+}
+
+.login-step > .login > .login-box > .column-no-login > .actions ul > li
+{
+    display: list-item;
+}
+
+.woocommerce-checkout .form-row .chosen-container-single .chosen-single
+{
+    background: #fff;
+}
+
+.wizard > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard > .content > .body input
+{
+    display: block;
+    /*border: 1px solid #ccc;*/
+}
+
+.wizard > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard > .content > .body input.error, .wizard > .content > .body input.form-error,
+.wizard > .content > .body select.error, .wizard > .content > .body select.form-error,
+.wizard > .content > .body div.error, .wizard > .content > .body div.form-error
+{
+    background: #fff!important;
+    border: 1px solid #b81c23!important;
+    color: #b81c23!important;
+}
+
+.wizard > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 102%;
+    text-transform: none;
+}
+
+.wizard > .content > .body label.checkbox
+{
+    font-weight: normal;
+    padding-top: 12px;
+}
+
+.termslink {
+    padding-top: 12px;
+}
+
+.wizard > .content > .body span.form-error, .wizard > .content > .body span.error,
+.wizard > .content > .body span.form-success, .wizard > .content > .body span.success,
+.wizard > .content > .body span.form-process, .wizard > .content > .body span.process
+{
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2px;
+    background-color: #b81c23;
+    border: 1px solid #b81c23;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.wizard > .content > .body span.form-success{
+    background-color: #136313;
+    border: 1px solid #136313;
+}
+.wizard > .content > .body span.form-process{
+    background-color: #2c5463;
+    border: 1px solid #2c5463;
+}
+
+.wizard > .content > .body {
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.login-box > .actions
+{
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.wizard > .actions
+{
+    position: relative;
+    border: 1px solid #eee;
+    border-top: none;
+
+    /*display: block;*/
+    /*text-align: right;*/
+}
+
+.wizard.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard > .actions > ul
+{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard > .actions > ul > li
+{
+    float: right;
+    margin: 0 0.5em;
+}
+.wizard > .actions > ul > li:first-child {
+    float: left;
+}
+
+.wizard.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+.column-no-login > .actions {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.nav-control-link-icon {
+    padding-left: 10px;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:active,
+.login-box > .column-no-login > .actions a,
+.login-box > .column-no-login > .actions a:active
+{
+    background: #9ac31c;
+    color: #fff;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.wizard > .actions > ul > li:first-child > a {
+    color: #464646;
+    background: #fff;
+    display: block;
+    padding: 1em 0 0 0;
+    text-decoration: none;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.wizard > .actions a:hover,
+.login-box > .column-no-login > .actions a:hover,
+.login-box > .column-login-form input.btn:hover  {
+    color: #fff;
+    background-color: #638224;
+    border-color: #638224;
+}
+
+.wizard > .actions .disabled a,
+.login-box > .actions .disabled a{
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard > .content > .body{
+    background: #fff;
+    display: block;
+    padding: 2em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.wizard > .loading
+{
+}
+
+.wizard > .loading .spinner
+{
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}
+
+#wizard ul.payment_methods li{
+    list-style-type: none;
+}
+
+#wizard .payment_methods  li input{
+    float: left;
+    margin-top: 9px !important;
+    margin-right: 6px !important;
+}
+
+.step-fields{
+    margin: 20px 0!important;
+}
+.to-right{
+    float: right;
+}
+.secured {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px!important;
+    margin: 20px auto;
+    width: 230px;
+    height: 50px;
+}
+
+.blue {
+    color: #00a0d2;
+}
+.grey {
+    color: #999;
+}
+.big-font {
+    font-size: 150%;
+}
+.small-font {
+    font-size: 90%;
+    font-weight: normal;
+}
+i.big-font {
+    font-size: 300%;
+}
+.secured i {
+    display: block;
+}
+.upper{
+    text-transform: uppercase;
+}
+
+.secured p {
+    margin: 0;
+    padding: 0;
+}
+
+.order_comments textarea {
+    -moz-transition: none 0s ease 0s; /* firefox default 'none' setting*/
+    max-width:100%;
+}
+
+/**********Media qUERIES ***/
+/***For smart phones **/
+@media(max-width: 767px){
+    .border-right{
+        border-right: none;
+    }
+    .column-no-login{
+        margin-top: 10px;
+    }
+    .wizard > .steps .actions.clearfix ul li{
+        float: right;
+    }
+    .wizard > .steps .actions.clearfix ul li:first-child{
+        float: left;
+    }
+    .wizard.vertical > .steps, .wizard.vertical > .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        clear:both;
+    }
+    .wizard.vertical > .content{
+        float:left;
+        margin-bottom: 10px;
+    }
+}

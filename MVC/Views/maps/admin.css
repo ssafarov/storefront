@@ -1,0 +1,10 @@
+#frm_addr input[type='text'],
+#frm_addr input[type='email'],
+#frm_addr textarea {
+  width: 80%;
+}
+#frm_addr label {
+  min-width: 200px;
+  display: block;
+  margin: 20px 5px 5px;
+}

@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var array $markers
+ */
+?>
+<?php foreach ($markers as $user_id => $user_markers): ?>
+    <?php foreach ($user_markers as $id => $marker): ?>
+        <?php if (is_array($marker)): ?>
+            <li>
+                <?= $marker['addr'] ?>
+                <a target="_blank" href="https://www.google.com/maps/place/<?= $marker['lat'] ?>,+<?= $marker['lng'] ?>">[show on map]</a>
+                <button class="delete_marker" data-id="<?= $id ?>" data-user_id="<?= $user_id ?>">Delete</button>
+            </li>
+        <?php endif; ?>
+    <?php endforeach; ?>
+<?php endforeach; ?>

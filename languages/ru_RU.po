@@ -1,0 +1,2858 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-07-23 12:58+0300\n"
+"PO-Revision-Date: 2015-07-23 12:59+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! Эта страница не найдена."
+
+#: 404.php:18
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Похоже, что ничего не было найдено по этому адресу. Может быть, попробуйте "
+"одну из приведенных ниже ссылок или воспользуйтесь Поиском?"
+
+#: 404.php:26
+msgid "Most Used Categories"
+msgstr "Наиболее популярные категории"
+
+#: 404.php:42
+msgid "Try looking in the monthly archives."
+msgstr "Попробуйте поискать в  ежемесячных архивах."
+
+#: comments.php:33 comments.php:51
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:34 comments.php:52
+msgid "&larr; Older Comments"
+msgstr "&larr; Старые комментарии"
+
+#: comments.php:35 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr "Новые комментарии &rarr;"
+
+#: comments.php:60
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Вы готовы опубликовать свой первый пост? <a href=\"%1$s\">Начать здесь</a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, но ничего не найдено по условиям поиска. Попробуйте, использовать "
+"другие ключевые слова."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Не удалось найти то что вы ищите. Воспользуйтесь поиском по сайту."
+
+#: footer-fullwidth.php:29
+msgid "We are hiring"
+msgstr "Мы нанимаем"
+
+#: footer-fullwidth.php:29
+msgid "visit our careers page to have a look"
+msgstr "посетите нашу страницу карьера иметь вид"
+
+#: footer-fullwidth.php:42
+msgid ""
+"© Copyright 2015 Fuel 3D Technologies Limited. All rights reserved. Fuel3D®, "
+"SCANIFY® and PELLEGO® are\n"
+"                registered trademarks in the name of Fuel 3D Technologies "
+"Limited. All other trademarks are the property\n"
+"                of their respective owners. All Fuel 3D Technologies Limited "
+"products and services are subject to\n"
+"                continuous development. We reserve the right to alter "
+"technical specifications without prior notice.\n"
+"                "
+msgstr ""
+"© Copyright 2015 Топливо 3D Technologies Limited. Все права защищены. "
+"Fuel3D®, SCANIFY® и PELLEGO® являются зарегистрированными товарными знаками "
+"в имени топлива 3D Technologies Limited. Все остальные торговые марки "
+"являются собственностью их соответствующих владельцев. Все топлива 3D "
+"Технологии продукты и услуги с ограниченной подлежат постоянному развитию. "
+"Мы оставляем за собой право вносить изменения в технические характеристики "
+"без предварительного уведомления."
+
+#: footer-fullwidth.php:56
+msgid "Contact us"
+msgstr "Для контактов:"
+
+#: functions.php:27
+#, php-format
+msgid ""
+"Hi %s,\n"
+"\n"
+"Thank you for registering with %s.\n"
+"\n"
+"To activate your account, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"You will then receive an email with your login details."
+msgstr ""
+"Привет%s, \n"
+"\n"
+"Спасибо за регистрацию на %s. \n"
+"\n"
+"Чтобы активировать свой аккаунт, пожалуйста, нажмите на следующую ссылку: "
+"%s \n"
+"\n"
+"Вы получите электронное письмо с вашими данными для входа."
+
+#: functions.php:48
+#, php-format
+msgid "%3$s - Activate your account"
+msgstr "%3$s - активировать свой аккаунт"
+
+#: functions.php:73
+msgid ""
+"Dear User,<br>\n"
+"<br>\n"
+"Your new account has been successfully created at: "
+msgstr ""
+"Уважаемый Пользователь, <br><br> Ваш новый счет был успешно создан по адресу:"
+
+#: functions.php:266 functions.php:341
+msgid "Not set"
+msgstr ""
+
+#: functions.php:324
+msgid "Signed agreement"
+msgstr ""
+
+#: functions.php:329
+msgid "Placed order"
+msgstr ""
+
+#: functions.php:490 page-templates/edit-profile-form.tpl.php:85
+msgid "Pounds Sterling [&pound;]"
+msgstr ""
+
+#: functions.php:492 page-templates/edit-profile-form.tpl.php:89
+msgid "Euros [&euro;]"
+msgstr ""
+
+#: functions.php:494 page-templates/edit-profile-form.tpl.php:93
+msgid "US Dollars [$]"
+msgstr ""
+
+#: functions.php:754
+msgid "In Stock"
+msgstr ""
+
+#: functions.php:754
+msgid "<i class=\"fa fa-check\"></i> "
+msgstr ""
+
+#: functions.php:755
+msgid "available"
+msgstr ""
+
+#: functions.php:758
+msgid "Sold Out"
+msgstr ""
+
+#: functions.php:758
+msgid "<i class=\"fa fa-times\"></i> "
+msgstr ""
+
+#: functions.php:759
+msgid "not-available"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:45
+msgid "Get started with Storefront"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:95
+msgid ""
+"Awesome! You've decided to use Storefront to enrich your WooCommerce store "
+"design."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:96
+msgid ""
+"Whether you're a store owner, WordPress developer, or both - we hope you "
+"enjoy Storefront's deep integration with WooCommerce core (including several "
+"popular WooCommerce extensions), plus the flexible design and extensible "
+"codebase that this theme provides."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:117
+msgid "Who are WooThemes?"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:118
+msgid ""
+"WooCommerce creators WooThemes is an international team of WordPress "
+"superstars building products for a passionate community of hundreds of "
+"thousands of users."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:119
+msgid "Visit WooThemes"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:124
+msgid "What is WooCommerce?"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:125
+msgid ""
+"WooCommerce is the most popular WordPress eCommerce plugin. Packed full of "
+"intuitive features and surrounded by a thriving community - it's the perfect "
+"solution for building an online store with WordPress."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:126
+msgid "Download & Install WooCommerce"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:127
+msgid "View WooCommerce Documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:132
+msgid "Can I Contribute?"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:133
+msgid ""
+"Found a bug? Want to contribute a patch or create a new feature? GitHub is "
+"the place to go! Or would you like to translate Storefront in to your "
+"language? Get involved at Transifex."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:134
+msgid "Storefront at GitHub"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:134
+msgid "Storefront at Transifex"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:155
+msgid "Using Storefront"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:156
+msgid ""
+"We've purposely kept Storefront lean & mean so configuration is a breeze. "
+"Here are some common theme-setup tasks:"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:160 inc/admin/welcome-screen.php:163
+msgid "Install WooCommerce"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:161
+msgid ""
+"Although Storefront works fine as a standard WordPress theme, it really "
+"shines when used for an online store. Install WooCommerce and start selling "
+"now."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:166
+msgid "Configure menu locations"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:167
+msgid ""
+"Storefront includes two menu locations for primary and secondary navigation. "
+"The primary navigation is perfect for your key pages like the shop and "
+"product categories. The secondary navigation is better suited to lower "
+"traffic pages such as terms and conditions."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:168
+msgid "Configure menus"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:170
+msgid "Create a color scheme"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:171
+msgid ""
+"Using the WordPress Customizer you can tweak Storefront's appearance to "
+"match your brand."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:172
+msgid "Open the Customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:176
+msgid "Configure homepage template"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:177
+msgid ""
+"Storefront includes a homepage template that displays a selection of "
+"products from your store."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:181
+msgid "Add your logo"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:184 inc/admin/welcome-screen.php:186
+msgid "View documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:185
+msgid ""
+"You can read detailed information on Storefronts features and how to develop "
+"on top of it in the documentation."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:202
+msgid "Enhance your site"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:205
+msgid ""
+"Below you will find a selection of hand-picked WooCommerce and Storefront "
+"extensions that could help improve your online store. Each WooCommerce "
+"extension integrates seamlessly with Storefront for enhanced performance."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:209
+msgid "Storefront Extensions"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:211
+msgid "Storefront Designer"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:212
+msgid ""
+"Adds a bunch of additional appearance settings allowing you to further tweak "
+"and perfect your Storefront design by changing the header layout, button "
+"styles, typographical schemes/scales and more."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:213 inc/admin/welcome-screen.php:218
+#: inc/admin/welcome-screen.php:223 inc/admin/welcome-screen.php:233
+#: inc/admin/welcome-screen.php:238 inc/admin/welcome-screen.php:243
+msgid "Buy now"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:216
+msgid "Storefront WooCommerce Customiser"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:217
+msgid ""
+"Gives you further control over the look and feel of your shop. Change the "
+"product archive and single layouts, toggle various shop components, enable a "
+"distraction free checkout design and more."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:221
+msgid "Storefront Parallax Hero"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:222
+msgid ""
+"Adds a parallax hero component to your homepage. Easily change the colors / "
+"copy and give your visitors a warm welcome!"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:225
+msgid "View all Storefront extensions &rarr;"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:229
+msgid "WooCommerce Extensions"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:231
+msgid "WooCommerce Bookings"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:232
+msgid ""
+"Allows you to sell your time or date based bookings, adding a new product "
+"type to your WooCommerce site. Perfect for those wanting to offer "
+"appointments, services or rentals."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:236
+msgid "WooCommerce Smart Coupons"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:237
+msgid ""
+"Smart coupons provide the most comprehensive and powerful solution for "
+"discount coupons, gift certificates, store credits and vouchers. It also "
+"allows customers to buy credits for themselves or gift to others."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:241
+msgid "WooCommerce Wishlists"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:242
+msgid ""
+"Allows guests and customers to create and add products to an unlimited "
+"number of Wishlists. From birthdays to weddings and everything in between, "
+"WooCommerce Wishlists are a welcome addition to any WooCommerce store."
+msgstr ""
+
+#: inc/admin/welcome-screen.php:245
+msgid "View all WooCommerce extensions &rarr;"
+msgstr ""
+
+#: inc/admin/welcome-screen.php:249
+msgid "Can't find a feature?"
+msgstr ""
+
+#: inc/custom_emails.php:22
+msgid "processing"
+msgstr ""
+
+#: inc/custom_emails.php:25
+msgid "days"
+msgstr ""
+
+#: inc/custom_shipping.php:19
+msgid "Fuel 3D organise shipping"
+msgstr ""
+
+#: inc/custom_shipping.php:24
+msgid "You organise shipping"
+msgstr ""
+
+#: inc/custom_shipping.php:29
+msgid "Courier details and account number:"
+msgstr ""
+
+#: inc/custom_shipping.php:99
+msgid "Courier details and account number"
+msgstr ""
+
+#: inc/customizer/controls.php:25
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/controls.php:29 inc/functions/setup.php:108
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/controls.php:46
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/controls.php:149
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/controls.php:151
+msgid "Customise the look & feel of your web site footer."
+msgstr ""
+
+#: inc/customizer/controls.php:218
+msgid "Buttons"
+msgstr ""
+
+#: inc/customizer/controls.php:220
+msgid "Customise the look & feel of your web site buttons."
+msgstr ""
+
+#: inc/customizer/controls.php:287
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/controls.php:297
+msgid "General layout"
+msgstr ""
+
+#: inc/customizer/controls.php:314
+msgid "More"
+msgstr ""
+
+#: inc/customizer/controls.php:324
+msgid "Looking for more options?"
+msgstr ""
+
+#: inc/customizer/controls/more.php:16
+#, php-format
+msgid ""
+"There's a range of Storefront extensions available to put additional power "
+"in your hands. Check out the %sStorefront%s page in your dashboard for more "
+"information."
+msgstr ""
+
+#: inc/functions/posttypes.php:10
+msgid "Slides"
+msgstr ""
+
+#: inc/functions/posttypes.php:11
+msgid "Slide"
+msgstr ""
+
+#: inc/functions/posttypes.php:12 inc/functions/posttypes.php:13
+msgid "Add New Slide"
+msgstr ""
+
+#: inc/functions/posttypes.php:14 inc/functions/posttypes.php:32
+#: inc/functions/posttypes.php:51 inc/structure/comments.php:61
+msgid "Edit"
+msgstr ""
+
+#: inc/functions/posttypes.php:15
+msgid "Edit Slide"
+msgstr ""
+
+#: inc/functions/posttypes.php:16 inc/functions/posttypes.php:34
+#: inc/functions/posttypes.php:53
+msgid "View"
+msgstr ""
+
+#: inc/functions/posttypes.php:17
+msgid "View Slide"
+msgstr ""
+
+#: inc/functions/posttypes.php:28 inc/functions/posttypes.php:29
+msgid "Portfolio"
+msgstr ""
+
+#: inc/functions/posttypes.php:30 inc/functions/posttypes.php:31
+msgid "Add New Project"
+msgstr ""
+
+#: inc/functions/posttypes.php:33
+msgid "Edit Project"
+msgstr ""
+
+#: inc/functions/posttypes.php:35
+msgid "View Project"
+msgstr ""
+
+#: inc/functions/posttypes.php:47 inc/functions/posttypes.php:48
+msgid "Clients"
+msgstr ""
+
+#: inc/functions/posttypes.php:49 inc/functions/posttypes.php:50
+msgid "Add New Client"
+msgstr ""
+
+#: inc/functions/posttypes.php:52
+msgid "Edit Client"
+msgstr ""
+
+#: inc/functions/posttypes.php:54
+msgid "View Client"
+msgstr ""
+
+#: inc/functions/posttypes.php:70
+msgid "Search Types"
+msgstr ""
+
+#: inc/functions/posttypes.php:71
+msgid "All Filters"
+msgstr ""
+
+#: inc/functions/posttypes.php:72
+msgid "Parent Filter"
+msgstr ""
+
+#: inc/functions/posttypes.php:73
+msgid "Parent Filter:"
+msgstr ""
+
+#: inc/functions/posttypes.php:74
+msgid "Edit Filters"
+msgstr ""
+
+#: inc/functions/posttypes.php:75
+msgid "Update Filter"
+msgstr ""
+
+#: inc/functions/posttypes.php:76
+msgid "Add New Filter"
+msgstr ""
+
+#: inc/functions/posttypes.php:77
+msgid "New Filter Name"
+msgstr ""
+
+#: inc/functions/setup.php:60 inc/structure/header.php:67
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/functions/setup.php:61
+msgid "Secondary Menu"
+msgstr ""
+
+#: inc/functions/setup.php:98
+msgid "Header top line for language selector"
+msgstr ""
+
+#: inc/functions/setup.php:118
+msgid "Sidebar"
+msgstr ""
+
+#: inc/functions/setup.php:131
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: inc/functions/setup.php:133
+#, php-format
+msgid "Widgetized Footer Region %d."
+msgstr ""
+
+#: inc/structure/comments.php:45
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/structure/footer.php:60
+#, php-format
+msgid "%1$s designed by %2$s."
+msgstr ""
+
+#: inc/structure/header.php:80 inc/structure/header.php:144
+#: page-templates/customer-portal-logged-in.php:140
+#: template-distributor-logged-in.php:113
+msgid "Edit profile"
+msgstr ""
+
+#: inc/structure/header.php:82 inc/structure/header.php:147
+msgid "Distributor portal"
+msgstr ""
+
+#: inc/structure/header.php:84 inc/structure/header.php:149
+#: page-templates/template-new-portal.php:93
+msgid "User Portal"
+msgstr ""
+
+#: inc/structure/header.php:86 inc/structure/header.php:152
+msgid "Log Out"
+msgstr ""
+
+#: inc/structure/header.php:134
+msgid "Shop"
+msgstr "Магазин"
+
+#: inc/structure/header.php:142
+msgid "Hello"
+msgstr "Привет"
+
+#: inc/structure/header.php:160 page-templates/customer-portal-guest.php:66
+#: page-templates/template-systemprocess.php:79
+#: template-distributor-guest.php:66 template-distributor-logged-in.php:527
+#: woocommerce/global/form-login.php:38
+msgid "Login"
+msgstr ""
+
+#: inc/structure/header.php:163 page-templates/customer-portal-guest.php:191
+#: page-templates/partials/_scanify-box.php:35
+msgid "Register"
+msgstr ""
+
+#: inc/structure/header.php:189
+msgid "Basket"
+msgstr "Корзина"
+
+#: inc/structure/header.php:189
+msgid "item"
+msgid_plural "items"
+msgstr[0] "позиция"
+msgstr[1] "позиции"
+msgstr[2] "позизий"
+
+#: inc/structure/header.php:195
+msgid "Checkout"
+msgstr "Оформить заказ"
+
+#: inc/structure/page.php:33 inc/structure/post.php:48
+msgid "Pages:"
+msgstr ""
+
+#: inc/structure/post.php:45
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/structure/post.php:69 inc/structure/post.php:77
+msgid ", "
+msgstr ""
+
+#: inc/structure/post.php:101
+msgid "Page"
+msgstr ""
+
+#: inc/structure/post.php:109
+msgid "&larr;"
+msgstr ""
+
+#: inc/structure/post.php:110
+msgid "&rarr;"
+msgstr ""
+
+#: inc/structure/post.php:134
+msgid "Post navigation"
+msgstr ""
+
+#: inc/structure/template-tags.php:26
+msgid "Product Categories"
+msgstr ""
+
+#: inc/structure/template-tags.php:54
+msgid "Recent Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:82
+msgid "Featured Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:110
+msgid "Top Rated Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:138
+msgid "On Sale"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:26
+msgid "Canceled order"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:27
+msgid ""
+"Order cancel emails are sent to the customer when the order is marked "
+"canceled."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:29
+msgid "Your order has been canceled"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:30
+msgid "Your {site_title} order from {order_date} is canceled"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:39
+msgid "We are sorry to see you have canceled your order."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:40
+msgid "Your {site_title} order from {order_date} has been canceled"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:140
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:140
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:140
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:140
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:140
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:142
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:142
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:142
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:142
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:142
+msgid "Enable this email notification"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:146
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:146
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:146
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:146
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:146
+msgid "Subject"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:148
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:155
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:162
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:169
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:148
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:155
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:162
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:169
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:148
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:155
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:162
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:169
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:148
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:155
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:162
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:169
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:148
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:155
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:162
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:169
+#, php-format
+msgid "Defaults to <code>%s</code>"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:153
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:153
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:153
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:153
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:153
+msgid "Email Heading"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:160
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:160
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:160
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:160
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:160
+msgid "Subject (downloadable)"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:167
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:167
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:167
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:167
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:167
+msgid "Email Heading (downloadable)"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:174
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:174
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:174
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:174
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:174
+msgid "Email type"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:176
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:176
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:176
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:176
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:176
+msgid "Choose which format of email to send."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:180
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:180
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:180
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:180
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:180
+msgid "Plain text"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:181
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:181
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:181
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:181
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:181
+msgid "HTML"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-canceled-order.php:182
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:182
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:182
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:182
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:182
+msgid "Multipart"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:26
+msgid "Order delivered. Registration reminder"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:27
+msgid ""
+"Send the registration reminder emails to the customer when the order is "
+"marked delivered."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:29
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:30
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:39
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-delivered-registration-reminder.php:40
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:29
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:30
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:39
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:40
+msgid "Don’t forget to register your SCANIFY"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:26
+msgid "Order dispatched. Download reminder"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:27
+msgid ""
+"Send the download reminder emails to the customer when the order is marked "
+"dispatched."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:29
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:30
+msgid "Don’t forget to download Fuel3D Studio."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:39
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-download-reminder.php:40
+msgid "Don’t forget to download Fuel3D Studio"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:26
+msgid "Order dispatched. Registration reminder"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-dispatched-registration-reminder.php:27
+msgid ""
+"Send the registration reminder emails to the customer when the order is "
+"marked dispatched."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:26
+msgid "Software downloaded. Follow up reminder"
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:27
+msgid ""
+"Send the follow up reminder emails to the customer when the software is "
+"marked as downloaded."
+msgstr ""
+
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:29
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:30
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:39
+#: inc/woocommerce/classes/emails/class-wc-email-customer-order-download-follow-reminder.php:40
+msgid "Here are some extra resources to get the most from SCANIFY."
+msgstr ""
+
+#: inc/woocommerce/template-tags.php:24
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce/template-tags.php:25
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: page-templates/add-distributor.php:34
+msgid "There was an error during the user deletion."
+msgstr ""
+
+#: page-templates/add-distributor.php:38
+#: page-templates/add-distributor.php:229
+#: page-templates/add-distributor.php:259
+msgid "You do not have permissions to edit this distributor."
+msgstr ""
+
+#: page-templates/add-distributor.php:106
+msgid "Unable to create user"
+msgstr ""
+
+#: page-templates/add-distributor.php:134
+#: page-templates/add-distributor.php:255
+msgid "Unable to fetch distributor info."
+msgstr ""
+
+#: page-templates/add-distributor.php:146
+msgid ""
+"This user name (login) is already used by another user. Please try a "
+"different one."
+msgstr ""
+
+#: page-templates/add-distributor.php:160
+#: page-templates/add-distributor.php:313
+msgid ""
+"This email is already used by another user. Please try a different one. "
+msgstr ""
+
+#: page-templates/add-distributor.php:173 page-templates/edit-profile.php:105
+msgid "The passwords you entered do not match.  Your password was not updated."
+msgstr ""
+
+#: page-templates/add-distributor.php:281
+msgid "The login you have entered is not valid. Please try again."
+msgstr ""
+
+#: page-templates/add-distributor.php:287
+msgid "The first name you have entered is not valid. Please try again."
+msgstr ""
+
+#: page-templates/add-distributor.php:293
+msgid "The last name you have entered is not valid. Please try again."
+msgstr ""
+
+#: page-templates/add-distributor.php:299
+msgid "The passwords you have entered do not match. Password is the required."
+msgstr ""
+
+#: page-templates/add-distributor.php:305
+msgid "The email you have entered is not valid. Please try again."
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:33
+#: page-templates/edit-profile-form.tpl.php:30
+#: woocommerce/myaccount/view-order.php:37
+msgid "Back to portal"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:50
+msgid ""
+"You must be logged in and have appropriate privileges to add distributors."
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:54
+msgid "Enter information of the your sub-distributor below."
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:57
+#: page-templates/edit-profile-form.tpl.php:50
+msgid "Profile details"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:64
+msgid "User name (login) *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:68
+msgid "Enter the distributor user name (login)"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:75
+#: page-templates/template-systemcheck.php:137
+msgid "First name *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:79
+msgid "Enter the distributor first name"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:86
+#: page-templates/template-systemcheck.php:154
+msgid "Last name *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:90
+msgid "Enter the distributor second name"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:99
+msgid "E-mail *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:103
+msgid "Enter the distributor e-mail"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:110
+msgid "E-mail confirm *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:114
+msgid "Repeat the distributor e-mail"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:121
+#: page-templates/customer-portal-guest.php:47
+#: template-distributor-guest.php:47 template-distributor-guest.php:104
+msgid "Password *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:125
+msgid "Enter the distributor password"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:131
+msgid "Password confirm *"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:135
+msgid "Confirm the distributor password"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:140
+msgid "Extra capabilities"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:147
+msgid "Enable \"My Distributor account\" tab"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:155
+msgid "Enable \"Place Order\" tab"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:163
+msgid "Enable \"Help&Support\" tab"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:171
+msgid "Enable \"Share info\" tab"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:179
+msgid "Enable \"Media&Assets\" tab"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:205
+#: template-distributor-logged-in.php:509
+msgid "Add user"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:209
+msgid "Save user"
+msgstr ""
+
+#: page-templates/add-edit-distributor-form.tpl.php:229
+#: page-templates/edit-profile-form.tpl.php:162
+msgid "Sorry, no page matched your criteria."
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:25
+msgid "Already Have An Account"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:29
+msgid "Register An Account"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:38
+#: page-templates/customer-portal-guest.php:92
+#: template-distributor-guest.php:38 template-distributor-guest.php:95
+msgid "Email Address *"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:58
+#: page-templates/template-kickstarterlogin.php:54
+#: page-templates/template-systemprocess.php:54
+#: page-templates/template-systemprocess.php:102
+#: template-distributor-guest.php:58 woocommerce/checkout/form-login.php:21
+msgid ""
+"Incorrect details entered, please enter a valid username and/or password"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:68
+#: page-templates/template-systemprocess.php:61
+#: page-templates/template-systemprocess.php:111
+#: template-distributor-guest.php:68
+msgid "Forgot / don't know your password?"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:75
+#: page-templates/template-systemcheck.php:103
+msgid "Username *"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:111
+#: template-distributor-guest.php:77
+msgid "First Name *"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:129
+#: template-distributor-guest.php:86
+msgid "Surname *"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:150
+msgid "Serial Number"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:171
+msgid "Where did you buy SCANIFY?"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:181
+#: page-templates/template-new-portal.php:197
+#: page-templates/template-systemcheck.php:186
+msgid "Click here for support"
+msgstr ""
+
+#: page-templates/customer-portal-guest.php:195
+msgid ""
+"Thank you for applying to be a distributor. We endeavour to respond to all "
+"applications within 2 weeks."
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:22
+#: woocommerce/checkout/thankyou.php:27
+msgid "My Account"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:28
+msgid "Licenses &amp; Software"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:34
+msgid "Help &amp; Support"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:40
+msgid "Products &amp; Invoices"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:67
+msgid "Recommended Products"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:93
+#: page-templates/customer-portal-logged-in.php:245
+msgid "Quick buy"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:131
+#: template-distributor-logged-in.php:148
+msgid "Delivery Address"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:134
+#: template-distributor-logged-in.php:151
+#: woocommerce/checkout/form-billing.php:21
+#: woocommerce/order/order-details.php:138
+msgid "Billing Address"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:137
+#: template-distributor-logged-in.php:154
+msgid "Email Address"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:141
+#: template-distributor-logged-in.php:114
+msgid "Log out"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:168
+#: template-distributor-logged-in.php:297
+msgid "Help and support"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:185
+msgid "Top questions"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:198
+msgid "Visit our Youtube"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:217
+msgid "My timeline"
+msgstr ""
+
+#: page-templates/customer-portal-logged-in.php:222
+msgid "Recommended for you"
+msgstr ""
+
+#: page-templates/customer-portal.php:96
+#: page-templates/template-systemcheck.php:17
+msgid "This field is required"
+msgstr ""
+
+#: page-templates/customer-portal.php:105
+#: page-templates/template-systemcheck.php:26
+msgid "Invalid email address"
+msgstr ""
+
+#: page-templates/customer-portal.php:110
+#: page-templates/template-systemcheck.php:31
+msgid "Email address already registered"
+msgstr ""
+
+#: page-templates/customer-portal.php:118
+#: page-templates/template-systemcheck.php:39
+msgid "Username should be at least 4 characters long"
+msgstr ""
+
+#: page-templates/customer-portal.php:123
+#: page-templates/template-systemcheck.php:44
+msgid "Username already exists"
+msgstr ""
+
+#: page-templates/customer-register-thank-you.php:16
+#, php-format
+msgid "<strong style=\"font-weight:400;\">%s</strong> is your new username"
+msgstr ""
+
+#: page-templates/customer-register-thank-you.php:17
+#: page-templates/template-systemcheck.php:94
+msgid ""
+"But, before you can start using your new username, <strong>you must activate "
+"it</strong>."
+msgstr ""
+
+#: page-templates/customer-register-thank-you.php:18
+#: page-templates/template-systemcheck.php:95
+#, php-format
+msgid "Check your inbox at <strong>%s</strong> and click the link given."
+msgstr ""
+
+#: page-templates/customer-register-thank-you.php:19
+#: page-templates/template-systemcheck.php:96
+msgid ""
+"If you do not activate your username within two days, you will have to sign "
+"up again."
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:45
+msgid "You must be logged in to edit your profile."
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:57
+#: template-distributor-logged-in.php:529
+msgid "First name"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:67
+#: template-distributor-logged-in.php:530
+msgid "Last name"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:79
+msgid "Choose your default currency"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:103
+msgid "E-mail"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:113
+msgid "Change password"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:123
+msgid "Repeat password"
+msgstr ""
+
+#: page-templates/edit-profile-form.tpl.php:148
+msgid "Update"
+msgstr ""
+
+#: page-templates/edit-profile.php:44
+msgid "Please enter a valid postcode/ZIP."
+msgstr ""
+
+#: page-templates/edit-profile.php:56
+msgid "is not a valid phone number."
+msgstr ""
+
+#: page-templates/edit-profile.php:63
+msgid "is not a valid email address."
+msgstr ""
+
+#: page-templates/edit-profile.php:86
+msgid "is not valid. Please enter one of the following:"
+msgstr ""
+
+#: page-templates/edit-profile.php:119
+msgid "The Email you entered is not valid.  please try again."
+msgstr ""
+
+#: page-templates/edit-profile.php:131
+msgid "This email is already used by another user.  try a different one."
+msgstr ""
+
+#: page-templates/edit-profile.php:195
+msgid "Billing details"
+msgstr ""
+
+#: page-templates/edit-profile.php:196
+msgid "Shipping details"
+msgstr ""
+
+#: page-templates/partials/_country-switcher.php:14
+msgid "Choose your country"
+msgstr ""
+
+#: page-templates/partials/_currency-switcher.php:14
+msgid "Switch Currency?"
+msgstr ""
+
+#: page-templates/partials/_scanify-box.php:34
+msgid "Sign in"
+msgstr ""
+
+#: page-templates/template-changepw.php:14
+msgid "Update your account details"
+msgstr ""
+
+#: page-templates/template-contact.php:23
+msgid "Your name"
+msgstr ""
+
+#: page-templates/template-contact.php:26
+msgid "Your email"
+msgstr ""
+
+#: page-templates/template-contact.php:29
+msgid "Your Message"
+msgstr ""
+
+#: page-templates/template-kick-home.php:1
+#: page-templates/template-kickstarterlogin.php:61
+#: page-templates/template-systemprocess.php:109
+#: page-templates/template-viewscanlogin.php:29
+msgid "Log In"
+msgstr ""
+
+#: page-templates/template-kick-home.php:1
+msgid "LOG IN HERE"
+msgstr ""
+
+#: page-templates/template-kickstarterlogin.php:25
+msgid "Kickstarter Beta-tester User Login"
+msgstr ""
+
+#: page-templates/template-kickstarterlogin.php:32
+msgid "Email (please see your introductory letter) *"
+msgstr ""
+
+#: page-templates/template-kickstarterlogin.php:39
+msgid "Serial Number (please see reverse of your Fuel3D scanner) *"
+msgstr ""
+
+#: page-templates/template-new-portal.php:103
+msgid "SOFTWARE DOWNLOAD"
+msgstr ""
+
+#: page-templates/template-new-portal.php:110
+msgid "TRAINING"
+msgstr ""
+
+#: page-templates/template-new-portal.php:117
+#: woocommerce/emails/customer-completed-order.php:185
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:162
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:163
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:162
+#: woocommerce/emails/customer-order-download-follow-reminder.php:63
+#: woocommerce/emails/customer-order-download-follow-reminder.php:203
+#: woocommerce/emails/customer-processing-order.php:162
+msgid "FAQ"
+msgstr ""
+
+#: page-templates/template-new-portal.php:129
+msgid "EDIT ACCOUNT"
+msgstr ""
+
+#: page-templates/template-new-portal.php:137
+msgid "HELP"
+msgstr ""
+
+#: page-templates/template-new-portal.php:154
+msgid "Back"
+msgstr ""
+
+#: page-templates/template-new-portal.php:176
+msgid "Register your device and download your software"
+msgstr ""
+
+#: page-templates/template-new-portal.php:181
+msgid "Please enter your scanner serial number."
+msgstr ""
+
+#: page-templates/template-new-portal.php:183
+msgid "You will find this on the back of your scanner."
+msgstr ""
+
+#: page-templates/template-new-portal.php:195
+msgid "Having any problems?"
+msgstr ""
+
+#: page-templates/template-portfolio.php:15
+msgid "Filter Items"
+msgstr ""
+
+#: page-templates/template-portfolio.php:17
+msgid "All"
+msgstr ""
+
+#: page-templates/template-reset.php:20
+msgid "Enter your e-mail address.."
+msgstr ""
+
+#: page-templates/template-reset.php:22
+msgid "Invalid e-mail address."
+msgstr ""
+
+#: page-templates/template-reset.php:24
+msgid "There is no user registered with that email address."
+msgstr ""
+
+#: page-templates/template-reset.php:37
+msgid "Fuel3D - Your new password"
+msgstr ""
+
+#: page-templates/template-reset.php:39
+msgid "Your new password is:"
+msgstr ""
+
+#: page-templates/template-reset.php:39
+msgid "click here"
+msgstr ""
+
+#: page-templates/template-reset.php:39
+msgid "to login to your account"
+msgstr ""
+
+#: page-templates/template-reset.php:47
+msgid "Please check your email address for your new password."
+msgstr ""
+
+#: page-templates/template-reset.php:49
+msgid "Oops something went wrong updaing your account."
+msgstr ""
+
+#: page-templates/template-reset.php:69
+msgid "Request your password"
+msgstr ""
+
+#: page-templates/template-reset.php:75
+msgid ""
+"If an account exists with the specified email address, password reset "
+"details have been sent to it."
+msgstr ""
+
+#: page-templates/template-reset.php:82
+msgid "Please enter your email address to receive your password"
+msgstr ""
+
+#: page-templates/template-reset.php:91
+msgid "Get New Password"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:76
+msgid "Invalid serial number"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:87
+msgid "Register your device"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:93
+#, php-format
+msgid "%s is your new username"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:99
+msgid "First time users or registering your device for the first time"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:120
+msgid "Email address *"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:171
+msgid "Enter your serial number *"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:186
+msgid "Problems registering your device?"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:191
+msgid "Submit"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:199
+msgid "Already logged-in before?"
+msgstr ""
+
+#: page-templates/template-systemcheck.php:201
+msgid "Please click here to login"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:29
+msgid "Login here:"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:34
+msgid "Please enter your registered email or usernam *:"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:41
+#: page-templates/template-systemprocess.php:90
+msgid "Please enter your password *"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:68
+#: page-templates/template-systemprocess.php:117
+msgid "Don't have an account?"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:69
+#: page-templates/template-systemprocess.php:118
+msgid "Please register here"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:83
+msgid "Please enter your registered email or username *"
+msgstr ""
+
+#: page-templates/template-systemprocess.php:123
+msgid "Register your device / Download your software"
+msgstr ""
+
+#: page-templates/template-systemreg.php:20
+msgid "Register Device / Download your software"
+msgstr ""
+
+#: page-templates/template-viewscan copy.php:1
+#: page-templates/template-viewscan.php:1
+msgid "You can download your scan files here"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid ""
+"The Fuel3D is the affordable point-and-shoot scanner that captures accurate "
+"3D models in seconds."
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid ""
+"You can be one of the first owners of this unique technology by pre-ordering "
+"today."
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "Click here"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "to find out more!"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "Preview your 3D scan for free at"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid ""
+"Simply download your files, unzip them and upload the OBJ.zip to Sketchfab."
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid ""
+"Fuel 3D Technologies Limited. (We) are committed to protecting and "
+"respecting your privacy. Your data and image is held by us in accordance "
+"with our Privacy Policy. We will not share your image in the public domain "
+"without your express permission. We reserve the right to use scan images "
+"that we hold on file for research and development purposes. Should you not "
+"wish us to use your scan image we totally understand, please let us know by "
+"emailing"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "OK, so what now?"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid ""
+"Well it’s now time to fire up your creativity and apply your face scan to a "
+"3D object and see where the journey takes you!"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "You can download 3D objects to customise at places like:"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "shapeways"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "and"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "Thingiverse"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "You can then 3D print at home or send your files to"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "or"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "i.materialise"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "Unsure what to do with your scan?"
+msgstr ""
+
+#: page-templates/template-viewscan.php:1
+msgid "View this page"
+msgstr ""
+
+#: page-templates/template-viewscanlogin.php:18
+msgid "Please login to view your scan"
+msgstr ""
+
+#: page-templates/template-viewscanlogin.php:26
+msgid "Unique User ID:"
+msgstr ""
+
+#: page-templates/template-viewscanlogin.php:27
+msgid "Password:"
+msgstr "hjgjkgh"
+
+#: page-templates/template-viewscanlogin.php:28
+msgid "Remember Me"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-activate.php:58 template-activate.php:81
+msgid "Your account is now active!"
+msgstr ""
+
+#: template-activate.php:63 template-activate.php:85
+#, php-format
+msgid ""
+"You may now <a href=\"%1$s\">log in</a> to the site using your chosen "
+"username of <strong>&#8220;%2$s&#8221;</strong>.</p><p>Please check your "
+"email inbox at <strong>%3$s</strong> for your password and login "
+"instructions.</p></p>If you do not receive an email, please check your junk "
+"or spam folder. If you still do not receive an email within an hour, you can "
+"<a href=\"%4$s\">reset your password</a>.</p>"
+msgstr ""
+
+#: template-activate.php:65
+#, php-format
+msgid ""
+"Your site at <a href=\"%1$s\">%2$s</a> is active. You may now log in to your "
+"site using your chosen username of <strong>&#8220;%3$s&#8221;</strong>.</"
+"p><p>Please check your email inbox at %4$s for your password and login "
+"instructions. If you do not receive an email, please check your junk or spam "
+"folder. If you still do not receive an email within an hour, you can <a href="
+"\"%5$s\">reset your password</a>."
+msgstr ""
+
+#: template-activate.php:70
+msgid "An error occurred during the activation"
+msgstr ""
+
+#: template-distributor-guest.php:25
+msgid "Already A Distributor"
+msgstr ""
+
+#: template-distributor-guest.php:29
+msgid "Apply To Become A Distributor"
+msgstr ""
+
+#: template-distributor-guest.php:113
+msgid "Country *"
+msgstr ""
+
+#: template-distributor-guest.php:127
+msgid "Describe Why You Want To Be A Distributor *"
+msgstr ""
+
+#: template-distributor-guest.php:144
+msgid "Apply"
+msgstr ""
+
+#: template-distributor-guest.php:148
+msgid ""
+"Thank you for applying to become a sales partner. We have received your "
+"information and a member our sales team will reach out to you shortly."
+msgstr ""
+
+#: template-distributor-logged-in.php:25
+msgid "My distributor account"
+msgstr ""
+
+#: template-distributor-logged-in.php:35
+msgid "Place an order"
+msgstr ""
+
+#: template-distributor-logged-in.php:45
+msgid "Help &amp; support"
+msgstr ""
+
+#: template-distributor-logged-in.php:55
+#: template-distributor-logged-in.php:545
+msgid "Share information"
+msgstr ""
+
+#: template-distributor-logged-in.php:65
+msgid "Media &amp; assets"
+msgstr ""
+
+#: template-distributor-logged-in.php:75
+msgid "Manage users"
+msgstr ""
+
+#: template-distributor-logged-in.php:125
+msgid "Distributor since"
+msgstr ""
+
+#: template-distributor-logged-in.php:130
+msgid "Distributor in"
+msgstr ""
+
+#: template-distributor-logged-in.php:130
+msgid "(click here to choose your location)"
+msgstr ""
+
+#: template-distributor-logged-in.php:135
+msgid "Discount rate:"
+msgstr ""
+
+#: template-distributor-logged-in.php:140
+msgid "Currency"
+msgstr ""
+
+#: template-distributor-logged-in.php:211
+#: template-distributor-logged-in.php:245
+msgid "MSRP:"
+msgstr ""
+
+#: template-distributor-logged-in.php:215
+#: template-distributor-logged-in.php:249
+#: woocommerce/pdf/Fuel3D/invoice.php:97
+#: woocommerce/pdf/Fuel3D/packing-slip.php:84
+msgid "SKU:"
+msgstr ""
+
+#: template-distributor-logged-in.php:265 woocommerce/cart/cart.php:35
+#: woocommerce/checkout/review-order.php:21
+#: woocommerce/order/order-details.php:22
+msgid "Total"
+msgstr ""
+
+#: template-distributor-logged-in.php:272
+msgid "Includes discount of"
+msgstr ""
+
+#: template-distributor-logged-in.php:276
+msgid "Order"
+msgstr ""
+
+#: template-distributor-logged-in.php:299
+msgid ""
+"Use this section if you require any help and technical support regarding "
+"Scanify. If you leave us a message or ask us a question then one of our team "
+"will be in contact with you shortly."
+msgstr ""
+
+#: template-distributor-logged-in.php:320
+msgid "Upload your sales information"
+msgstr ""
+
+#: template-distributor-logged-in.php:325
+msgid ""
+"We are always keen to find out how you are getting on selling scanify. "
+"Therefore please feel free to send us any information or figures that will "
+"allow us to understand and support. We are happy to see all sorts, figures, "
+"forms, or pictures from customers, or download our CSV file with the "
+"template that we will most benefit from."
+msgstr ""
+
+#: template-distributor-logged-in.php:330
+msgid "Download CSV"
+msgstr ""
+
+#: template-distributor-logged-in.php:332
+msgid "Upload Files"
+msgstr ""
+
+#: template-distributor-logged-in.php:341
+msgid "Drag &amp; drop files here"
+msgstr ""
+
+#: template-distributor-logged-in.php:347
+msgid "Quick feedback"
+msgstr ""
+
+#: template-distributor-logged-in.php:419
+msgid "Distributor Downloads"
+msgstr ""
+
+#: template-distributor-logged-in.php:420
+msgid ""
+"This section is where you should find all the information you will need to "
+"sell Scanify and support our users. This site will be regularly updated as "
+"new material becomes available and you will be notified when this happens."
+msgstr ""
+
+#: template-distributor-logged-in.php:425
+msgid "Please wait, loading content"
+msgstr ""
+
+#: template-distributor-logged-in.php:521
+msgid "Users"
+msgstr ""
+
+#: template-distributor-logged-in.php:526
+msgid "ID"
+msgstr ""
+
+#: template-distributor-logged-in.php:528
+msgid "Email"
+msgstr ""
+
+#: template-distributor-logged-in.php:531
+msgid "Capabilities"
+msgstr ""
+
+#: template-distributor-logged-in.php:532
+msgid "Actions"
+msgstr ""
+
+#: template-distributor-logged-in.php:539
+msgid "My distributor"
+msgstr ""
+
+#: template-distributor-logged-in.php:541
+#: woocommerce/checkout/review-order.php:132
+msgid "Place order"
+msgstr ""
+
+#: template-distributor-logged-in.php:543
+msgid "Help & Support"
+msgstr ""
+
+#: template-distributor-logged-in.php:547
+msgid "Media & assets"
+msgstr ""
+
+#: template-distributor-logged-in.php:556
+msgid "edit"
+msgstr ""
+
+#: template-distributor-logged-in.php:556
+msgid "delete"
+msgstr ""
+
+#: template-distributor-logged-in.php:724
+msgid "Please confirm user deletion"
+msgstr ""
+
+#: template-distributor-logged-in.php:725
+msgid "Are you sure you want to delete user with id #"
+msgstr ""
+
+#: template-distributor-logged-in.php:726
+msgid "Yes"
+msgstr ""
+
+#: template-distributor-logged-in.php:726
+msgid "No"
+msgstr ""
+
+#: template-distributor-missing-role.php:11
+msgid "It seems you are not registered as a distributor."
+msgstr ""
+
+#: template-distributor-missing-role.php:12
+msgid "If you want to apply to be one, please"
+msgstr ""
+
+#: template-distributor-missing-role.php:12
+msgid "log out"
+msgstr ""
+
+#: template-distributor-missing-role.php:12
+msgid "and refresh this page to access the applicants form."
+msgstr ""
+
+#: template-distributor-portal.php:13
+msgid ""
+"You have not setup your default currency. For an improved and faster user "
+"experience, you can set it up <a href='/edit-profile/'>here</a>"
+msgstr ""
+
+#: template-homepage-distributor.php:24
+msgid "A world of scanning at your fingertips"
+msgstr ""
+
+#: template-homepage-distributor.php:25
+msgid "FREE SHIPPING on scanners for US and Europe"
+msgstr ""
+
+#: template-homepage-distributor.php:28
+msgid "Apply here to be a sales partner"
+msgstr ""
+
+#: template-homepage-distributor.php:29
+msgid "Existing partners click here"
+msgstr ""
+
+#: template-homepage-distributor.php:38
+msgid "Your browser does not support the <code>video</code> element."
+msgstr ""
+
+#: template-homepage-distributor.php:41 template-homepage.php:43
+msgid "Close"
+msgstr ""
+
+#: template-homepage.php:30
+msgid "Shop now"
+msgstr ""
+
+#: template-homepage.php:31
+msgid "Watch the video"
+msgstr ""
+
+#: template-homepage.php:40
+msgid "Your browser does not support the"
+msgstr ""
+
+#: template-homepage.php:40
+msgid "video"
+msgstr ""
+
+#: template-homepage.php:40
+msgid "element."
+msgstr ""
+
+#: woocommerce-aelia-currencyswitcher/currency-selector-widget-buttons.php:43
+msgid "Error"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:16
+#, php-format
+msgid "Shipping #%d"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:18
+msgid "Shipping and Handling"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:55
+msgid ""
+"No shipping methods were found; please recalculate your shipping or continue "
+"to checkout and enter your full address to see if there is shipping "
+"available to your location."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:59
+msgid "Please fill in your details to see available shipping methods."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:69 woocommerce/cart/cart-shipping.php:77
+#, php-format
+msgid "Sorry, shipping is unavailable %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:69 woocommerce/cart/cart-shipping.php:77
+msgid ""
+"If you require assistance or wish to make alternate arrangements please "
+"contact us."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:93
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:18
+msgid "Cart Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:24 woocommerce/cart/cart-totals.php:64
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:72
+msgid "Order Total"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:84
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:87
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+
+#: woocommerce/cart/cart.php:32 woocommerce/checkout/review-order.php:18
+#: woocommerce/order/order-details.php:19
+msgid "Order Summary"
+msgstr ""
+
+#: woocommerce/cart/cart.php:33 woocommerce/checkout/review-order.php:19
+#: woocommerce/emails/admin-new-order.php:24
+#: woocommerce/order/order-details.php:20
+#: woocommerce/pdf/Fuel3D/invoice.php:84
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:34 woocommerce/checkout/review-order.php:20
+#: woocommerce/emails/admin-new-order.php:23
+#: woocommerce/order/order-details.php:21
+#: woocommerce/pdf/Fuel3D/invoice.php:83
+#: woocommerce/pdf/Fuel3D/packing-slip.php:71
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:76
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:110
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:132
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Continue Shopping"
+msgstr ""
+
+#: woocommerce/cart/cart.php:181
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:38
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:17
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:40
+msgid "Create an account?"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:51
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer click <a href=\"#login\" class=\"js-scroll-to showlogin\">here</a> "
+"to login."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:30
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:16
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:16
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:31
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:14
+msgid "Returning customer?"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:15
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:35
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer please proceed to the Billing &amp; "
+"Shipping section."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:34
+msgid "Ship to a different address?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:61
+msgid "Additional Information"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:114
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:116
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:125
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:125
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:147
+#: woocommerce/checkout/review-order.php:158
+msgid "I&rsquo;ve read and accept the <a href=\""
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:165
+#: woocommerce/checkout/thankyou.php:43
+msgid "Consumer right of return and refund"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:197
+msgid ""
+"We have a legal duty to supply goods that conform with your Contract. As a "
+"consumer, you will always have legal rights in relation to products that are "
+"faulty or not as described. These rights are not affected by our returns "
+"policy or the terms of your Contract with us."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:198
+msgid ""
+"Consumer's right of return and refund. If you are a consumer and buy your "
+"Product online, you have a legal right to cancel a contract under the "
+"Consumer Contracts Regulations and to claim a refund at any time until the "
+"day 14 days after you receive the Products. For details of this right, "
+"please see "
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:198
+msgid "Right-of-return"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:198
+msgid ""
+"The easiest way to do this is to complete the cancellation form in the "
+"\"Manage your order\" facility on our website"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:198
+#: woocommerce/checkout/thankyou.php:44
+msgid "Cancellation form"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:198
+msgid ""
+"Details of this right will also be included with your Product on delivery."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:199
+msgid ""
+"We provide a limited warranty that on delivery and for a period of 12 months "
+"from delivery, the Product will be free from material defects and conform in "
+"all material respects with its Product description on our website. For "
+"details of this warranty, please see "
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:199
+msgid "warranty"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:199
+msgid ""
+"Details of the warranty will also be included with your Product on delivery."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:17
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:20
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:22
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:25
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31 woocommerce/checkout/thankyou.php:110
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid "Please"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid "logout of your account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid "when you are finished reviewing your order."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:49
+msgid ""
+"Your license codes are shown below, these should be entered into your Studio "
+"splash screen"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:60
+msgid "What happens next:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:64
+msgid "1. We have emailed you"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:68
+msgid "2. We send your scanner to you"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:72
+msgid "3. Return here to download your software"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:84
+#: woocommerce/emails/customer-invoice.php:45
+msgid "Order:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:88
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:92
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:97
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:129
+msgid "Add extra"
+msgstr ""
+
+#: woocommerce/content-single-product.php:192
+msgid "Technical specifications"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:13
+#, php-format
+msgid "You have received an order from %s. Their order is as follows:"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:17
+#, php-format
+msgid "Order: %s"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:22
+#: woocommerce/pdf/Fuel3D/invoice.php:82
+#: woocommerce/pdf/Fuel3D/packing-slip.php:70
+msgid "Product"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:50
+#: woocommerce/order/order-details.php:117
+msgid "Customer details"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:53
+#: woocommerce/order/order-details.php:121
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:56
+msgid "Tel:"
+msgstr ""
+
+#: woocommerce/emails/customer-canceled-order.php:23
+msgid ""
+"It is a shame that you have decided to cancel! No problem, but we would "
+"really appreciate it if you could let us know why?"
+msgstr ""
+
+#: woocommerce/emails/customer-canceled-order.php:34
+#: woocommerce/emails/customer-completed-order.php:77
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:44
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:45
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:44
+msgid "Thanks for your interest in Fuel3D and SCANIFY."
+msgstr ""
+
+#: woocommerce/emails/customer-canceled-order.php:35
+#: woocommerce/emails/customer-completed-order.php:78
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:45
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:46
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:45
+#: woocommerce/emails/customer-order-download-follow-reminder.php:92
+msgid "Best wishes,"
+msgstr ""
+
+#: woocommerce/emails/customer-canceled-order.php:36
+#: woocommerce/emails/customer-completed-order.php:79
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:46
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:47
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:46
+#: woocommerce/emails/customer-order-download-follow-reminder.php:93
+msgid "The Fuel3D Team"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:46
+msgid "Your SCANIFY is on its way!"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:47
+msgid "Here are your tracking details:"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:48
+#: woocommerce/emails/customer-invoice.php:51
+msgid "Tracking number:"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:63
+msgid "Track your order"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:123
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:100
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:101
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:100
+#: woocommerce/emails/customer-order-download-follow-reminder.php:141
+#: woocommerce/emails/customer-processing-order.php:100
+msgid ""
+"Compliment your SCANIFY with some essential accessories. We’ve just released "
+"a SCANIFY Neoprene Soft Case"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:170
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:147
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:148
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:147
+#: woocommerce/emails/customer-order-download-follow-reminder.php:188
+#: woocommerce/emails/customer-processing-order.php:147
+msgid "Do check out our FAQ;"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:219
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:196
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:197
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:196
+#: woocommerce/emails/customer-order-download-follow-reminder.php:237
+#: woocommerce/emails/customer-processing-order.php:196
+msgid "For further questions view our helpdesk"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:234
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:211
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:212
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:211
+#: woocommerce/emails/customer-order-download-follow-reminder.php:252
+#: woocommerce/emails/customer-processing-order.php:211
+msgid "Helpdesk"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:55
+#, php-format
+msgid ""
+"An order has been created for you on %s. To pay for this order please use "
+"the following link: %s"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:55
+msgid "pay"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:84
+#: woocommerce/emails/customer-processing-order.php:22
+msgid "QTY"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:85
+#: woocommerce/emails/customer-processing-order.php:23
+msgid "NAME"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:86
+#: woocommerce/emails/customer-processing-order.php:24
+msgid "UNIT PRICE"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:87
+#: woocommerce/emails/customer-processing-order.php:25
+msgid "VAT"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:88
+#: woocommerce/emails/customer-processing-order.php:26
+msgid "Tax"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:89
+#: woocommerce/emails/customer-processing-order.php:27
+msgid "TOTAL"
+msgstr ""
+
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:23
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:23
+msgid ""
+"Please don’t forget to register your SCANIFY. Now that you have it, what "
+"will you create?"
+msgstr ""
+
+#: woocommerce/emails/customer-order-delivered-registration-reminder.php:34
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:34
+msgid ""
+"Registering your SCANIFY activates your Fuel3D product warranty and gives "
+"you full access to the support pages on our site."
+msgstr ""
+
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:23
+msgid "Please don’t forget to download the software to go with your SCANIFY."
+msgstr ""
+
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:34
+msgid ""
+"You are nearly there! Downloading Fuel3D Studio is important if you want to "
+"take scans and make them useable."
+msgstr ""
+
+#: woocommerce/emails/customer-order-dispatched-download-reminder.php:35
+msgid "Remember that you have 5 licenses for Fuel3D Studio with every SCANIFY"
+msgstr ""
+
+#: woocommerce/emails/customer-order-dispatched-registration-reminder.php:115
+#: woocommerce/emails/customer-order-download-follow-reminder.php:156
+#: woocommerce/emails/customer-processing-order.php:115
+msgid "Scanify Bag"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:23
+msgid ""
+"Need some help? Want to know more? Here is some training content to give you "
+"a hand."
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:34
+msgid ""
+"We want you to get the most out of your SCANIFY. Here are some resources you "
+"may find useful:"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:48
+msgid "For video tutorials:"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:50
+msgid "For FAQ:"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:52
+msgid "For further training:"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:59
+msgid "Videos"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:67
+msgid "Training"
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:82
+msgid ""
+"We hope that you are enjoying using your SCANIFY and this extra guidance "
+"means you can get more from it."
+msgstr ""
+
+#: woocommerce/emails/customer-order-download-follow-reminder.php:107
+msgid "Shipped"
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:14
+msgid "Your order is processing; then it will be packaged ready for shipping"
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:18
+msgid "Your Order"
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:49
+msgid "Scanify"
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:59
+msgid ""
+"We would appreciate it if you could take the time to complete a very short "
+"survey about how you plan to use your SCANIFY; it only takes 2 minutes."
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:69
+msgid "Processing"
+msgstr ""
+
+#: woocommerce/emails/email-footer.php:57
+msgid "Facebook"
+msgstr ""
+
+#: woocommerce/emails/email-footer.php:60
+msgid "Instagram"
+msgstr ""
+
+#: woocommerce/emails/email-footer.php:63
+msgid "Twitter"
+msgstr ""
+
+#: woocommerce/emails/email-footer.php:95
+msgid ""
+"&copy; Copyright 2015 Fuel 3D Technologies Limited. All rights reserved. "
+"Fuel3D®, SCANIFY® and Pellego® are registered trademarks in the name of Fuel "
+"3D Technologies Limited. All other trademarks are the property of their "
+"respective owners. All Fuel 3D Technologies Limited products and services "
+"are subject to continuous development. We reserve the right to alter "
+"technical specifications without prior notice."
+msgstr ""
+
+#: woocommerce/emails/email-order-items.php:54
+#, php-format
+msgid "Download %d"
+msgstr ""
+
+#: woocommerce/emails/email-order-items.php:56
+msgid "Download"
+msgstr ""
+
+#: woocommerce/global/form-login.php:22
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/global/form-login.php:28
+msgid "Password"
+msgstr ""
+
+#: woocommerce/global/form-login.php:44
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/global/form-login.php:49
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/my-account.php:30
+#, php-format
+msgid ""
+"Hello <strong>%1$s</strong> (not %1$s? <a style=\"text-decoration: "
+"underline; color: #9AC31C; font-weight: bold;\" href=\"%2$s\">Sign out</a>)."
+msgstr ""
+
+#: woocommerce/myaccount/my-account.php:35
+#, php-format
+msgid ""
+"From your account dashboard you can view your recent orders, manage your "
+"shipping and billing addresses and <a href=\"%s\">edit your password and "
+"account details</a>."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:41
+#, php-format
+msgid ""
+"Order <mark class=\"order-number\">%s</mark> was placed on <mark class="
+"\"order-date\">%s</mark> and is currently <mark class=\"order-status\">%s</"
+"mark>."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:47
+msgid "Order Updates"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:53
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#: woocommerce/order/order-details.php:76
+#, php-format
+msgid "Download file%s"
+msgstr ""
+
+#: woocommerce/order/order-details.php:122
+msgid "Telephone:"
+msgstr ""
+
+#: woocommerce/order/order-details.php:143
+#: woocommerce/order/order-details.php:160
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/order/order-details.php:155
+msgid "Shipping Address"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:9 woocommerce/pdf/Fuel3D/invoice.php:21
+msgid "Invoice"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:29
+#: woocommerce/pdf/Fuel3D/packing-slip.php:40
+msgid "Billing Address:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:40
+msgid "Ship To:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:49
+msgid "Invoice Number:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:55
+msgid "Invoice Date:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:60
+#: woocommerce/pdf/Fuel3D/packing-slip.php:48
+msgid "Order Number:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:64
+#: woocommerce/pdf/Fuel3D/packing-slip.php:52
+msgid "Order Date:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:68
+msgid "Payment Method:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:91
+#: woocommerce/pdf/Fuel3D/packing-slip.php:78
+msgid "Description"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:96
+#: woocommerce/pdf/Fuel3D/packing-slip.php:83
+msgid "SKU"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:98
+#: woocommerce/pdf/Fuel3D/packing-slip.php:85
+msgid "Weight:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/invoice.php:112
+#: woocommerce/pdf/Fuel3D/packing-slip.php:99
+msgid "Customer Notes"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/packing-slip.php:9
+#: woocommerce/pdf/Fuel3D/packing-slip.php:21
+msgid "Packing Slip"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/packing-slip.php:29
+msgid "Shipping Address:"
+msgstr ""
+
+#: woocommerce/pdf/Fuel3D/packing-slip.php:56
+msgid "Shipping Method:"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/portal.php:17
+msgid "Buy now!"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:13
+msgid "Active Licenses"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:15
+msgid "You have no active licenses"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:54
+msgid "Device(s):"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:103
+msgid "Available Licenses"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:105
+msgid ""
+"New Fuel3D Studio software coming soon, for the latest news please follow us "
+"on social media"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:178
+msgid "Serial Numbers"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:192
+msgid "You currently have no serial numbers added"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:200
+msgid "Enter serial number here"
+msgstr ""
+
+#: MVC/Views/licenses-and-software.phtml:208
+msgid "Software Downloads"
+msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                © Copyright 2015 Fuel 3D Technologies Limited. All rights "
+#~ "reserved. Fuel3D®, SCANIFY® and PELLEGO® are\n"
+#~ "                registered trademarks in the name of Fuel 3D Technologies "
+#~ "Limited. All other trademarks are the property\n"
+#~ "                of their respective owners. All Fuel 3D Technologies "
+#~ "Limited products and services are subject to\n"
+#~ "                continuous development. We reserve the right to alter "
+#~ "technical specifications without prior notice.\n"
+#~ "                "
+#~ msgstr ""
+#~ "© Copyright 2015 Топливо 3D Technologies Limited. Все права защищены. "
+#~ "Fuel3D®, SCANIFY® и PELLEGO® являются зарегистрированными товарными "
+#~ "знаками в имени топлива 3D Technologies Limited. Все остальные торговые "
+#~ "марки являются собственностью их соответствующих владельцев. Все топлива "
+#~ "3D Технологии продукты и услуги с ограниченной подлежат постоянному "
+#~ "развитию. Мы оставляем за собой право вносить изменения в технические "
+#~ "характеристики без предварительного уведомления."

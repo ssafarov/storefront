@@ -1,0 +1,23 @@
+// Custom mixings
+// @extends /bootstrap/mixins.less
+// 
+
+.half_wh ( @width, @height ) {
+    width: ceil(@width / 2);
+    height: ceil(@height / 2);
+}
+.cf {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.transition ( @transition ) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}

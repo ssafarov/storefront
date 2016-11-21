@@ -1,0 +1,338 @@
+// Footer styles
+
+
+.site-footer {
+    background: @gray-darker;
+    color: @gray;
+    font-size: 1.2rem;
+    font-weight: 900;
+    header {
+        text-align: center;
+    }
+    .big {
+        color: #fff !important;
+    }
+
+    h3 {
+        font-weight: 900;
+        border-bottom: 1px solid @gray;
+        padding-bottom: 8px;
+        margin-bottom: 26px;
+        color: #fff;
+    }
+    a {
+        &:not(.button) {
+            color: @gray;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .footer-text {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-widgets {
+    border: 0;
+
+    .widget_text {
+        li {
+            margin-bottom: 10px;
+            a {
+                display: block;
+                // border-bottom: 1px solid @brand-primary;
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .social_stickers_widget {
+        text-align: center;
+
+        h3 {
+            text-align: left;
+        }
+        a {
+            margin: 0 6px 6px;
+            display: inline-block;
+        }
+    }
+}
+
+// Footer Contact Widget
+.widget-contact {
+    position: fixed;
+    bottom: -570px;
+    z-index: 10000;
+    height: 615px;
+    width: 100%;
+    padding: @grid-gutter-width / 2;
+    // Small validation for this form
+    .form-control-wrapper.has-error,
+    .wpcf7-form-control-wrap.has-error,
+    .invalid .form-control-wrapper,
+    .invalid .wpcf7-form-control-wrap {
+        background: none !important;
+        &:after {
+            top: 7px;
+        }
+    }
+    .fancy-radios .form-control-wrapper:after,
+    .fancy-radios .wpcf7-form-control-wrap:after,
+//    .wpcf7-not-valid-tip { display: none !important; }
+    // Remove buggy empty paragraphs
+    p { display: none; }
+    .form-group {
+        margin-bottom: 5px;
+    }
+    &--up {
+        bottom: 0;
+        height: auto;
+    }
+    &--down {
+        bottom: -570px;
+    }
+    &__header {
+        cursor: pointer;
+        text-align: left;
+        padding: 12px;
+        position: relative;
+        border-bottom: solid 1px #fff;
+        background-color: #727272;
+        border-radius: @border-radius-xl @border-radius-xl 0 0;
+        width: 100%;
+        color: #fff;
+        .transition(background-color .3s ease);
+        .cf();
+        &:hover {
+            background-color: darken(#727272, -10%);
+        }
+        h6 {
+            margin: 0;
+            display: inline-block;
+        }
+        i {
+            font-size: 4rem;
+            position: absolute;
+            top: 5px;
+            &.left  { left: 0; }
+            &.right {
+                right: -5px;
+                color: @brand-primary;
+            }
+        }
+    }
+    &__body {
+        background-color: @gray-light;
+        color: @gray-darker;
+        padding: 15px;
+        height: 100%;
+        line-height: 1;
+        [type="text"],
+        [type="email"],
+        select {
+            height: 30px;
+            padding: 5px;
+        }
+        textarea {
+            padding: 5px;
+        }
+        [type="text"],
+        [type="email"],
+        select,
+        textarea {
+            text-align: left;
+            border: 1px solid #b0b0b0;
+            color: @gray-darker;
+        }
+        .btn {
+            text-transform: none;
+            width: 100%;
+        }
+    }
+    .fancy-radios {
+        .wpcf7-radio {
+            display: block;
+            .make-row();
+        }
+        .wpcf7-list-item {
+            font-weight: @btn-font-weight;
+            float: left;
+            margin-left: 15px;
+            width: 122px;
+            position: relative;
+            text-align: center;
+            border-width: 2px;
+            border-style: solid;
+            cursor: pointer;
+            .button-size(
+                0;
+                0;
+                @btn-font-size-base;
+                @line-height-base;
+                30px
+            );
+
+            .button-variant(
+                @brand-primary;
+                @brand-light;
+                @brand-primary;
+
+                @brand-light;
+                @brand-primary-hover;
+                @brand-primary-hover
+            );
+
+            .button-active(
+                @brand-light;
+                @brand-primary;
+                @brand-primary
+            );
+
+            input {
+                display: block;
+                margin: 0;
+                height: 30px;
+                position: absolute;
+                width: 100%;
+                .opacity(0) !important;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media (max-width: @screen-xs-max) {
+    .zopim {
+        display:none !important;
+    }
+}
+@media (max-width: @screen-sm-max) {
+    .site-footer {
+        header {
+            .big {
+                text-align: left;
+            }
+            span {
+                display: block;
+            }
+        }
+        .hire-high {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .hire-info {
+            font-size: 1.5rem;
+            font-weight: 400;
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 18px;
+            border-color: @brand-primary;
+        }
+        .footer-widgets {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .widget-contact {
+        right: @grid-gutter-width / 2;
+        width: 365px;
+        padding: 0;
+        z-index: 9999;
+        .form-group {
+            margin-bottom: 5px;
+        }
+        .fancy-radios {
+            .wpcf7-list-item {
+                width: 160px;
+            }
+        }
+        &__header {
+            width: 270px;
+            text-align: center;
+            &--full {
+                width: 100%;
+            }
+        }
+        &__body {
+            .btn {
+                float: right;
+                width: 150px;
+                margin-right: 95px;
+            }
+            .switchMode{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+    .switch-mode{
+        width: 335px;
+        margin: 0 auto;
+    }
+    .mode-chat, .mode-email {
+        padding: 10px;
+        text-align: center;
+        height: 42px;
+        font-weight: bold;
+    }
+    .mode-chat{
+        background-image:  url('/img/chat-no.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+        color: #9ac31c;
+    }
+    .mode-chat.active{
+        background-image: url('/img/chat-act.png');
+        color: #fff;
+    }
+    .mode-email{
+        background-image: url('/img/emailus-no.png');
+        background-position: center left;
+        background-repeat: no-repeat;
+        color: #9ac31c;
+    }
+    .mode-email.active{
+        background-image: url('/img/emailus-act.png');
+        color: #fff;
+    }
+    .mode-email.active a, .mode-chat.active a{
+        color: #fff;
+    }
+
+@media (min-width: @screen-md-min) {
+    .site-footer {
+        header {
+            .big {
+                font-size: 28px;
+                font-weight: 300;
+                position: relative;
+                top: 7px;
+            }
+        }
+    }
+    .footer-widgets {
+        .social_stickers_widget {
+            a {
+                display: block;
+                float: left;
+                width: 20%;
+                margin: 0 0 6px;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

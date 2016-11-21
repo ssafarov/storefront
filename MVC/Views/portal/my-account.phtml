@@ -1,0 +1,119 @@
+<?php
+/**
+ * @var array $quickBuyProducts
+ * @var array $quickBuyIDs
+ * @var string $quickBuy
+ * @var array $info
+ */
+
+// TODO: Should have a method that returns this info
+$current_user = wp_get_current_user();
+$full_name = $current_user->user_firstname . ' ' . $current_user->user_lastname;
+?>
+<div id="timeline">
+    <?php /*<div class="row visible-xs-block">
+								<div class="col-xs-12">
+									<a class="btn btn-secondary pull-right" href="#">Visit forum</a>
+								</div>
+							</div>
+							<br>*/ ?>
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-push-4">
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-md-3 col-lg-3">
+                    <img style="background-color: #9ac31c;" src="<?php echo home_url('img/arrow_up.png');?>"/>
+                </div>
+                <div class="col-md-9 col-lg-9">
+                    <h4 class="primary-color">OK, let's get you started or upgraded:</h4>
+                    <p>You'll need Fuel3D Studio to use your SCANIFY. It's available in 3 packages.</p>
+
+                    <p style="padding-top: 20px;"><img style="margin-right: 10px;" src="<?php echo home_url('img/ls_tab.png');?>" align="left"/>
+                        First-time or existing users: Please click the <b>"Licenses & Software"</b> tab to access your software choice.</p>
+                </div>
+            </div>
+
+            <h3><?php _e('Recommended Products', 'storefront'); ?></h3><br>
+
+            <?php foreach ($quickBuyProducts as $key => $product) : ?>
+                <?php if ($product->post) : ?>
+                    <div class="well recommended_product">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <a href="<?php echo $product->get_permalink(); ?>">
+                                    <?php
+                                    echo $product->get_image('thumbnail', [
+                                        'class' => 'img-responsive',
+                                    ]);
+                                    ?>
+                                </a>
+                            </div>
+                            <div class="details col-xs-12 col-sm-8">
+                                <h4><a href="<?php echo $product->get_permalink(); ?>"><?php echo $product->get_title(); ?></a></h4>
+
+                                <p><?php echo apply_filters('the_excerpt', $product->get_post_data()->post_excerpt); ?></p>
+
+                                <div class="price">
+                                    <h6><?php echo get_post_custom_values('product_price_heading', $product->id)[0]; ?></h6>
+                                    <sup><?php echo get_woocommerce_currency_symbol(); ?></sup>
+                                    <span class="amount"><?php echo $product->get_price(); ?></span>
+
+                                    <form class="cart has-validation-callback" action="<?php echo $quickBuy ?>" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="quick-buy" value="<?php echo $quickBuyIDs[$key]; ?>">
+                                        <button type="submit" class="single_add_to_cart_button btn btn-primary"><?php _e('Quick buy', 'storefront'); ?></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+            <?php /*<div class="visible-sm-block visible-md-block visible-lg-block">
+										<br><h3><?php _e('For more information'); ?></h3>
+										<div class="row">
+											<div class="col-xs-12 col-sm-8">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit congue varius. Donec scelerisque elit quis diam porta, sodales dictum.</p>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<a class="btn btn-secondary pull-right" href="#">Visit forum</a>
+											</div>
+										</div>
+									</div>*/ ?>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-md-pull-8">
+            <div class="avatar-name">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-12">
+                        <div class="avatar-wrap">
+                            <?php echo get_avatar($current_user->user_email, '128'); ?>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-md-12">
+                        <div class="name-wrap">
+                            <h1><?php echo $full_name; ?></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customer-details">
+                <h3><?php _e('Username', 'storefront'); ?></h3>
+
+                <p><?php echo $current_user->user_login ?></p>
+
+                <h3><?php _e('Email Address', 'storefront'); ?></h3>
+
+                <p><?php echo $current_user->user_email ?></p>
+
+                <h3><?php _e('Delivery Address', 'storefront'); ?></h3>
+                <?php echo $info['shipping_address']; ?>
+
+                <h3><?php _e('Billing Address', 'storefront'); ?></h3>
+                <?php echo $info['billing_address']; ?>
+
+                <a class="btn btn-secondary" href="<?php echo home_url('edit-profile'); ?>" title="Edit profile"><?php _e('Edit profile', 'storefront'); ?></a>
+                <a class="btn btn-secondary" href="<?php echo wp_logout_url(); ?>" title="Log out"><?php _e('Log out', 'storefront'); ?></a>
+            </div>
+        </div>
+    </div>
+</div>

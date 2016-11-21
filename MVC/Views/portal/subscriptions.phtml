@@ -1,0 +1,168 @@
+<?php
+/**
+ * @var array $blog [1, 4]
+ * @var array $virtualProductIDs
+ * @var array $userSerials
+ */
+$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
+\MVC\View::addJS('portal/subscriptions'.$suffix.'.js');
+\MVC\View::addCSS('portal/subscriptions.css');
+?>
+
+<div class="row" id="subscription">
+
+    <!-- Cancel subscription -->
+    <div id="subscriptions">
+        <h3><?php _e('Subscriptions', 'storefront') ?></h3>
+
+
+        <table class="subscription">
+            <tr>
+                <th class="h_status"><?php _e('Order status', 'storefront') ?></th>
+                <th class="h_product h_product_title" colspan="2"><?php _e('Product title', 'storefront') ?></th>
+                <th class="hidden-md hidden-sm hidden-xs"><?php _e('Order #', 'storefront') ?></th>
+                <th class="hidden-sm hidden-xs"><?php _e('Subscription type', 'storefront') ?></th>
+                <th class="hidden-xs"><?php _e('Purchase date', 'storefront') ?></th>
+                <th class="hidden-xs"><?php _e('Renew date', 'storefront') ?></th>
+                <th>&nbsp;</th>
+            </tr>
+
+            <?php
+                $emptySubscriptionsFlag = true;
+
+                foreach ($blog as $blog_id):
+                    switch_to_blog($blog_id);
+                    $subscriptions = WC_Subscriptions_Manager::get_users_subscriptions();
+
+//	                var_dump (count($subscriptions)); ?>
+
+	                <?php if (!empty($subscriptions)): ?>
+                        <?php foreach ($subscriptions as $subscription_key => $subscription): ?>
+                            <?php
+                            if ($subscription['status'] == 'trash') {
+                                continue;
+                            }
+
+                            $emptySubscriptionsFlag = false;
+                            $order = new WC_Order($subscription['order_id']); //6980
+                            $product = wc_get_product($subscription['product_id']);
+                            $nalpeironPerpetual = $product->get_attribute('nalpeiron_perpetual');
+                            $next_payment_timestamp_gmt = WC_Subscriptions_Manager::get_next_payment_date(
+                                $subscription_key,
+                                get_current_user_id(), 'timestamp'
+                            );
+                            $subscription_expiration_timestamp_gmt = WC_Subscriptions_Manager::calculate_subscription_expiration_date(
+                                $subscription_key,
+                                get_current_user_id(), 'timestamp'
+                            );
+
+                            $next_payment_timestamp = $next_payment_timestamp_gmt > 0?$next_payment_timestamp_gmt + get_option('gmt_offset') * 3600:$subscription_expiration_timestamp_gmt + get_option('gmt_offset') * 3600;
+
+                            ////WC_Subscriptions_Manager::ajax_update_next_payment_date()
+        //                            $amount = WC_Subscriptions_Manager::get_amount_from_proportion()
+        //                            $amount = WC_Subscriptions_Manager::get_subscription_price_string()
+        //                            WC_Subscriptions_Manager::update_next_payment_date()
+        //                            WC_Subscriptions_Manager::activate_subscriptions_for_order()
+                            // WC_Subscriptions_Manager::orde
+
+                            ?>
+                            <tr data-key="<?= $subscription_key ?>">
+                                <td>&nbsp;&nbsp;
+                                    <?= ($nalpeironPerpetual && $subscription['status'] != 'cancelled') ? _e('active',
+                                        'storefront') : $subscription['status'] ?>
+                                </td>
+                                <td>
+                                    <?= $product->get_image() ?>
+                                </td>
+
+                                <td class="product_title">
+                                    <a href="<?= $product->get_permalink() ?>"><?= $product->get_title() ?></a>
+                                </td>
+
+                                <td class="hidden-md hidden-sm hidden-xs">
+                                    <a href="<?= $order->get_view_order_url(); ?>">
+                                        #<?= $order->id ?>
+                                    </a>
+                                </td>
+
+                                <td class="hidden-sm hidden-xs">
+                                    <?php
+                                    $l = [];
+                                    foreach ($order->get_items() as $order_item_id => $order_item): ?>
+
+                                        <?php $l[] = wc_get_order_item_meta(
+                                            $order_item_id,
+                                            NALPEIRON_DISPLAY_LICENSE_CODE,
+                                            true
+                                        ) ?>
+                                        <?php $l[] = wc_get_order_item_meta(
+                                            $order_item_id,
+                                            NALPEIRON_DISPLAY_LICENSE_CODES,
+                                            true
+                                        ) ?>
+                                    <?php endforeach; ?>
+                                    <?php
+                                    $l = array_filter($l);
+                                    $l = implode(',', $l);
+                                    $profile = $product->get_attribute('nalpeiron_profilename_new');
+                                    if (!$profile) {
+                                        $profile = $product->get_attribute('nalpeiron_profilename');
+                                    }
+                                    ?>
+                                    <span title="<?= $l ?>"><?= $profile ?></span>
+                                </td>
+
+                                <td class="hidden-xs">
+                                    <?= date('d M Y', strtotime($order->order_date)) ?>
+                                </td>
+
+                                <td class="hidden-xs">
+                                    <?php if ($next_payment_timestamp > 0) {
+                                        echo date('d M Y', $next_payment_timestamp);
+                                    } else {
+                                        echo "N/A";
+                                    } ?>
+                                </td>
+
+                                <td class="btns">
+                                    <?php if ($subscription['status'] == 'active') : ?>
+                                    <a href="javascript:;" class="show_confirm">
+                                        <?php _e('Cancel Subscription', 'storefront') ?>
+                                    </a>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                            <?php if ($subscription['status'] == 'active') : ?>
+                            <!--<tr class="cancel_confirm" data-key="<?/*= $subscription_key */?>">
+                                <td colspan="7">
+                                    <h5>Cancel Subscription</h5>
+                                    Are you sure?
+                                    <div class="btns">
+                                        <button class="cancel_subscription btn btn-primary">Cancel Subscription</button>
+                                        <button class="do_not_cancel button btn btn-secondary">Do not Cancel</button>
+                                    </div>
+                                </td>
+                            </tr>-->
+                            <tr class="cancel_subscription_pop-up" data-key="<?= $subscription_key ?>">
+                                <td colspan="7">
+                                    <h5>Cancel Subscription</h5>
+                                    <p> <?php _e('To cancel your subscription please contact us at ',
+                                            'storefront') ?><a href="mailto:support@fuel-3d.com?subject=Cancel subscription">support@fuel-3d.com</a></p>
+                                    <button class="do_not_cancel button btn btn-secondary"><?php _e('Close',
+                                            'storefront') ?></button>
+                                </td>
+                            </tr>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+
+            <?php if ($emptySubscriptionsFlag): ?>
+                <tr class="user-subscriptions no-user-subscriptions">
+                    <td colspan="7"><?php _e('No subscriptions found.', 'storefront') ?></td>
+                </tr>
+            <?php endif; ?>
+        </table>
+    </div>
+</div>
+<?php restore_current_blog(); ?>

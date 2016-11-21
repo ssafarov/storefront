@@ -1,0 +1,220 @@
+// Forms all over the place
+
+input {
+    &:hover,
+    &:focus,
+    &.focus {
+        opacity: 1 !important;
+    }
+    transition: 0.3s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+    label {
+        font-weight: 700;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}
+
+.label-captcha-wi{
+    padding-top:11px;
+}
+.captcha-wi{
+    margin:5px 0 15px 0;
+    border-radius: 2px;
+}
+img.captcha-wi {
+    width: 124px;
+    height: 30px;
+    border: 1px solid @gray;
+}
+.btn-xs-close {
+    padding: 0;
+}
+.btn-xs-close i{
+    font-size: 2.8em;
+    line-height: 37px;
+}
+
+[type="text"],
+[type="password"],
+[type="email"],
+[type="tel"],
+[type="number"],
+select,
+textarea,
+.form-control,
+.form-table td select {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: @border-radius-base;
+    border: 1px solid @gray;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px;
+    height: 55px;
+    transition: 0.3s;
+
+    &:focus {
+        border-color: @brand-secondary;
+        outline: none;
+    }
+}
+textarea,
+textarea.form-control {
+    text-align: left;
+    height: auto;
+    resize: vertical;
+}
+
+select { text-align: left !important; }
+
+// Wrapper to display validation messages
+.form-control-wrapper,
+.wpcf7-form-control-wrap {
+    display: block !important;
+    margin: 0 -4px;
+    padding: 4px;
+    border-radius: @border-radius-base;
+    position: relative;
+    .transition(all .2s ease);
+
+    &:after {
+        font-family: 'icomoon';
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 1.8rem;
+    }
+
+    // Error
+    &.has-error,
+    .invalid & {
+        // Icon
+//        &:after {
+//            content: "\e614";
+//            color: @brand-danger;
+//        }
+//        background-color: @brand-danger;
+        input.wpcf7-not-valid,
+        select.wpcf7-not-valid,
+        textarea.wpcf7-not-valid {
+            border-color: @brand-danger;
+            border-width: medium;
+            border-radius: initial;
+            background-color: #fff;
+            &:focus { border-color: @brand-danger; }
+        }
+        .help-block,
+        .wpcf7-not-valid-tip {
+            color: #fff;
+            display: block;
+            text-align: center;
+            background-color: @brand-danger;
+            font-family: inherit;
+            font-size: medium;
+        }
+    }
+
+    // Success
+    &.has-success {
+        // Icon
+        &:after {
+            content: "\e615";
+            color: @brand-primary;
+        }
+        input,
+        select,
+        textarea {
+            border-color: @brand-primary;
+            &:focus { border-color: @brand-primary; }
+        }
+    }
+}
+
+
+// CF7
+.wpcf7 {
+    .wpcf7-response-output {
+        margin: 10px 0;
+        border-width: 1px;
+        padding: 10px;
+        border-radius: @border-radius-base;
+    }
+    .wpcf7-validation-errors { display: none !important; }
+    .wpcf7-mail-sent-ng {
+        .alert-variant(@state-danger-bg; @state-danger-border; @state-danger-text);
+    }
+
+    .wpcf7-mail-sent-ok {
+        .alert-variant(@state-success-bg; @state-success-border; @state-success-text);
+    }
+}
+
+// .button,
+// .added_to_cart,
+// .widget-area .widget a.button,
+// .site-header-cart .widget_shopping_cart a.button,
+// button.alt,
+// input[type="button"].alt,
+// input[type="reset"].alt,
+// input[type="submit"].alt,
+// .button.alt,
+// .added_to_cart.alt,
+// .widget-area .widget a.button.alt,
+// .added_to_cart
+// button.button,
+// input.button,
+// #review_form #submit {
+//     // .transition(all, .2ms, ease-in-out);
+//     background-color: @brand-primary;
+//     border-color: @brand-primary;
+//     color: @brand-light;
+
+//     &:hover {
+//         background-color: @brand-primary-hover;
+//         border-color: @brand-primary-hover;
+//         color: @brand-light;
+//     }
+// }
+
+#wpmem_reg label.text,
+#wpmem_reg label.checkbox,
+#wpmem_reg label.textarea,
+#wpmem_reg label.select,
+#wpmem_login label {
+    height: auto;
+}
+
+button.btn {
+    img {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+
+// Currency selector
+// TODO: MAKE IT GOOD
+#aelia_cs_currencies,
+.currency_switcher select {
+  width: auto;
+  height: auto;
+}
+
+
+// Remove spinning controllers
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+

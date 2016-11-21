@@ -1,0 +1,20 @@
+<?php
+\MVC\View::addCSS('maps/distributor.css');
+
+\MVC\View::addJS('https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry');
+\MVC\View::addJS('maps/distributor.js');
+
+/**
+ * @var array $markers ;
+ */
+?>
+<script>
+    window.markers = <?= json_encode($markers) ?>;
+</script>
+<div style="clear: both"></div>
+<hr>
+We are proud to work with a network of partners internationally.
+On the map below you will find our sales partners who will be happy to demonstrate SCANIFY or answer any sales enquiries you might have.
+<div style="border: 1px solid #c0c0c0">
+    <div class="map-canvas"></div>
+</div>

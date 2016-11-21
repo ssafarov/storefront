@@ -1,0 +1,61 @@
+<?php
+namespace MVC\Controllers;
+
+/**
+ * @var array $videos
+ */
+\MVC\View::addCSS('video/video.css');
+
+if (WP_DEBUG) {
+    \MVC\View::addJS('video/jquery.jcarousel.js');
+} else {
+    \MVC\View::addJS('video/jquery.jcarousel.min.js');
+}
+\MVC\View::addJS('video/video.js');
+?>
+
+<div id="video_container" class="row">
+    <div id="video_iframe">
+        <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="video_description">
+        <h5 class="title"></h5>
+
+        <div class="description"></div>
+    </div>
+</div>
+
+<div id="vid_slide_container" class="row">
+
+    <table>
+        <tr>
+            <td class="prev jcarousel-control-prev">
+                &lsaquo;
+            </td>
+            <td class="slide">
+                <div class="jcarousel">
+                    <ul>
+                        <?php foreach ($videos as $video): ?>
+                            <li class="vid_item" data-url="<?= $video['link'] ?>">
+                                <img src='<?= $video['thumbnail'] ?>'/>
+
+                                <div class="vid_title"><?= $video['title'] ?></div>
+                                <div class="vid_description hidden"><?= $video['description'] ?></div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </td>
+            <td class="next jcarousel-control-next">
+                <!-- next controls -->
+                &rsaquo;
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="row visible-xs-block">
+    <div class="col-xs-12">
+        <a class="btn btn-secondary" href="https://www.youtube.com/user/Fuel3DScanner" target="_blank"><?php _e('Visit our Youtube', 'storefront'); ?></a>
+    </div>
+</div>

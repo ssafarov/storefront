@@ -1,0 +1,29 @@
+<?php
+/**
+ * @var array $result
+ */
+$d = ',';
+$headers = [
+    'fname' => 'F Name',
+    'lname' => 'L Name',
+    'email' => 'email',
+    'time' => 'date of download',
+
+];
+echo implode($d, $headers) . "\n";
+foreach ($result as $row):
+    $row = (array)$row;
+    if (isset($row['time'])) {
+        $row['time'] = date('Y-m-d H:i:s', $row['time']);
+    }
+    $data = [];
+    foreach ($headers as $head => $title) {
+        if (isset($row[$head])) {
+            if (strpos($row[$head], $d) !== false) {
+                $row[$head] = '"' . $row[$head] . '"';
+            }
+            $data[$head] = $row[$head];
+        }
+    }
+    echo implode($d, $data) . "\n";
+endforeach;

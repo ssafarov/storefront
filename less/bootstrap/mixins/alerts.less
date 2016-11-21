@@ -1,0 +1,17 @@
+// Alerts
+
+.alert-variant(@background; @border; @text-color) {
+  background-color: @background;
+  border-color: @border;
+  color: @text-color;
+
+  hr {
+    border-top-color: darken(@border, 5%);
+  }
+  .alert-link,
+  // Add "a" here for the cases where we don't have access to the HTML to add .alert-link class
+  a {
+    color: darken(@text-color, 10%);
+    font-weight: 700;
+  }
+}

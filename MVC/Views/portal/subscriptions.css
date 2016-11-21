@@ -1,0 +1,52 @@
+#subscriptions table.subscription {
+  margin-top: 20px;
+}
+
+#subscriptions table.subscription th {
+  font-weight: normal;
+  background-color: #eeeeee;
+  padding: 10px 10px 10px 0;
+}
+#subscriptions table.subscription td {
+  padding-right: 10px;
+}
+#subscriptions table.subscription .h_status {
+  padding-left: 15px;
+}
+#subscriptions table.subscription .product_title {
+  max-width: 210px;
+}
+#subscriptions table.subscription .wp-post-image {
+  height: 87px;
+  width: 87px;
+}
+#subscriptions table.subscription .btns a {
+  font-weight: bold;
+  display: block;
+}
+#subscriptions table.subscription tr {
+  border-bottom: 2px solid #eeeeee;
+  border-top: 0;
+}
+#subscriptions table.subscription tr.cancel_subscription_pop-up {
+  display: none;
+}
+#subscriptions table.subscription tr.cancel_subscription_pop-up td {
+  border: 2px solid #eeeeee;
+  border-top: 0;
+  padding: 25px 45px;
+}
+#subscriptions table.subscription tr.cancel_confirm {
+  display: none;
+}
+#subscriptions table.subscription tr.cancel_confirm td {
+  border: 2px solid #eeeeee;
+  border-top: 0;
+  padding: 25px 45px;
+}
+#subscriptions .btns {
+  margin: 20px 0;
+}
+#subscriptions .btns .do_not_cancel {
+  margin-left: 20px;
+}

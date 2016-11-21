@@ -1,0 +1,414 @@
+<?php
+use MVC\Controllers\PortalController;
+/**
+ * @var array $blog [1 => [$licenseCodes, $uniqueLicenseCodes], 4 => [$licenseCodes, $uniqueLicenseCodes]]
+ * @var array $virtualProductIDs
+ * @var array $userSerials
+ */
+
+$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
+\MVC\View::addJS('portal/licenses-and-software'.$suffix .'.js');
+?>
+
+<div class="row" id="licenses-and-software-promo">
+    <div class="col-sm-12 col-md-9 col-lg-8">
+        <div class="well info-panel secondary-color-bg">
+            <h3><?php _e('I\'m already using Fuel3D studio', 'storefront'); ?>...</h3>
+            <p class="description"><?php _e('If you\'re already using Fuel3D Studio, you can upgrade to the latest version by following the 3 simple steps below.', 'storefront'); ?></p>
+        </div>
+        <div class="row">
+            <div class="row-height">
+                <div class="billet-first col-sm-12 col-md-4 col-lg-4 col-height" id="top_section_1">
+                    <div class="inside inside-full-height">
+                        <div class="content">
+                            <div class="well info-panel secondary-color-bg normal-padding hand">
+                                <p class="head"><?php _e('Upgrade for free','storefront'); ?></p>
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 small-padding">
+                                    <p class="block-letter"><?php _e('1','storefront'); ?></p>
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 no-padding">
+                                    <p class="block-text"><?php _e('Download Fuel3D Studio Starter 2.0 for FREE from the \'Software Downloads\' section on the right.','storefront'); ?></p><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="billet-second col-sm-12 col-md-4 col-lg-4 col-height" id="top_section_2">
+                    <div class="well info-panel secondary-color-bg normal-padding hand">
+                        <p class="head"><?php _e('Trial Fuel3D Studio Advanced','storefront'); ?></p>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 small-padding">
+                            <p class="block-letter"><?php _e('2','storefront'); ?></p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 no-padding">
+                            <p class="block-text"><?php _e('Once downloaded, click free trial button in the top right corner to trial Studio Advanced for 30 days.','storefront'); ?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="billet-third col-sm-12 col-md-4 col-lg-4 col-height" id="top_section_3">
+                    <div class="well info-panel secondary-color-bg normal-padding hand">
+                        <p class="head"><?php _e('Choose your licence','storefront'); ?></p>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 small-padding">
+                            <p class="block-letter"><?php _e('3','storefront'); ?></p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 no-padding">
+                            <p class="block-text"><?php _e('You can upgrade to Fuel3D Studio Plus or Advanced at any time during your trial by visiting the section below.','storefront'); ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-4">
+        <div class="well info-panel primary-color-bg"
+             style="height: 290px; background-position: bottom; background-repeat: no-repeat;  background-image: url('/img/arrow_down.png');">
+            <h4 style="text-align: center"><?php _e('It\'s my first time!','storefront'); ?></h4>
+
+            <p style="text-align: center" class="adaptive"><?php _e('To get started with Fuel3D','storefront'); ?><br/><?php _e('studio, enter the serial','storefront'); ?><br/><?php _e('number from your SCANIFY device into','storefront'); ?><br/><?php _e('the box below.','storefront'); ?></p>
+        </div>
+    </div>
+
+</div>
+<div class="row" id="licenses-and-software">
+    <div class="col-sm-12 col-md-9 col-lg-8">
+        <h3><?php _e('Active Licenses', 'storefront'); ?></h3>
+        <?php $emptyCodesFlag = true; ?>
+
+        <?php foreach ($blog as $blog_id => $uniqueLicenseCodes):
+            switch_to_blog($blog_id);
+
+            $uniqueLicenseCodes = $uniqueLicenseCodes['uniqueLicenseCodes'];
+            $emptyCodesFlag = $emptyCodesFlag && empty($uniqueLicenseCodes); ?>
+
+            <?php if (!empty($uniqueLicenseCodes)) :  ?>
+            <?php foreach ($uniqueLicenseCodes as $item): ?>
+                <?php
+                $subscriptions = WC_Subscriptions_Manager::get_users_subscriptions(0, [$item['order_id']]);
+                if ($subscriptions[$item['order_id'].'_'.$item['product_id']]['status'] != 'cancelled') :
+                    global $product;
+                    $product = wc_get_product($item['product_id']);
+                    $emptyCodesFlag = false;
+                    ?>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <h4><a href="<?= $product->get_permalink(); ?>"><?= $item['title'] ?></a></h4>
+                                <p><?php _e('License code:', 'storefront'); ?> <br> <strong><?= Nalpeiron::licenseEncode($item['code']); ?></strong></p>
+                                <?php
+                                if (isset($item['license']['profile'])) :
+                                    if ($item['license']['profile'] != $product->get_attribute('nalpeiron_profilename')) :
+                                        ?>
+                                        <p style="color: red"><?php _e('Upgraded to:', 'storefront'); ?> <?= $item['license']['profile'] ?></p>
+                                        <?php
+                                    endif;
+                                endif;
+                                ?>
+
+                                <p>
+                                    <?php $order = new WC_Order($item['order_id']); ?>
+                                    <a href="<?= $order->get_view_order_url(); ?>">
+                                        <?php _e('Order #', 'storefront'); ?><?= $order->id ?>
+                                    </a>
+                                </p>
+
+                                <?php if (isset($item['license']['subscriptionenddate']) && $item['license']['subscriptionenddate']) : ?>
+                                    <p><?php _e('Expires:', 'storefront'); ?> <br> <strong><?= $item['license']['subscriptionenddate']; ?></strong></p>
+                                <?php elseif (isset($item['license']['licensetype']) && $item['license']['licensetype'] == PortalController::LICENSE_TYPE_PERPETUAL) : ?>
+                                    <p><?php _e('Expires:', 'storefront'); ?> <br> <strong><?php _e('Perpetual', 'storefront');?></strong></p>
+                                <?php elseif (isset($item['license']['subscriptionperiod']) && $item['license']['subscriptionperiod']) : ?>
+                                    <?php
+                                    $when = new \DateTime($order->order_date);
+                                    $when->modify('+'.$item['license']['subscriptionperiod'].' days');
+                                    ?>
+                                    <p><?php _e('Expires:', 'storefront'); ?> <br> <strong><?= $when->format('d M Y'); ?></strong></p>
+                                <?php else: ?>
+                                    <p><?php _e('Expires:', 'storefront'); ?> <br> <strong><?php _e('N/A', 'storefront'); ?></strong></p>
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <h5><?php _e('Device(s):', 'storefront'); ?></h5>
+
+                                <div id="devices" class="devices">
+                                    <?php if (is_string($item['license'])): ?>
+                                        <div class="woocommerce-error"><?= $item['license'] ?></div>
+                                    <?php elseif (is_string($item['activity'])): ?>
+                                        <div class="woocommerce-error"><?= $item['activity'] ?></div>
+                                    <?php elseif (!is_array($item['activity'])): ?>
+                                        <div class="woocommerce-error"><?php _e('This license has not been activated on any devices yet.', 'storefront');?></div>
+                                    <?php elseif (is_array($item['activity'])): ?>
+                                        <ul class="devices-list">
+                                            <?php foreach ($item['activity'] as $activity) : ?>
+                                                <div class="dashed device-item <?= $activity['status'] ?>">
+                                                    <p class="computerid">
+                                                        <?php if (isset($activity['info']['systemdetails']['computername'])): ?>
+                                                    <li>
+                                                        <strong><?= $activity['info']['systemdetails']['computername']; ?></strong>
+                                                        <a title="Unlink" href="#" class="tooltip_off del"
+                                                           data-product="<?= $item['nalpeiron_productid'] ?>"
+                                                           data-code="<?= $item['code'] ?>"
+                                                           data-computer="<?= $activity['computerid'] ?>"><i
+                                                                class="icon-error"></i></a></li>
+                                                    <?php else: ?>
+                                                        <li style="color:darkred;"><strong><?= $activity['computerid']; ?></strong>
+                                                            <a title="Unlink" href="#" class="tooltip_off del"
+                                                               data-product="<?= $item['nalpeiron_productid'] ?>"
+                                                               data-code="<?= $item['code'] ?>"
+                                                               data-computer="<?= $activity['computerid'] ?>"><i
+                                                                    class="icon-error"></i></a></li>
+                                                    <?php endif; ?>
+                                                    </p>
+
+                                                    <div class="computerid-info">
+                                                        <?php if (isset($activity['info']['systemdetails']['computername'])): ?>
+                                                            <li><?php _e('Computer id: ', 'storefront'); ?><strong><?= $activity['computerid'] ?></strong>
+                                                            </li>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                        <span><?php _e('Copy and paste the licence code above right into the Fuel3D Studio license screen. If you don\'t have Studio installed you can download it by clicking on the green button on the right hand side labelled "Download Fuel3D Studio" under Software Downloads.',
+                                                'storefront'); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <?php endforeach; ?>
+
+        <?php restore_current_blog(); ?>
+
+        <?php if ($emptyCodesFlag) : ?>
+            <p><?php _e('You have no any active licenses yet.', 'storefront'); ?></p>
+        <?php endif; ?>
+
+        <h3 id="section_avil_lics"><?php _e('Available Licenses', 'storefront'); ?></h3>
+        <?php if (empty($virtualProductIDs)) { ?>
+            <p><?php _e('New Fuel3D Studio software coming soon, for the latest news please follow us on social media', 'storefront'); ?></p>
+        <?php } ?>
+
+        <?php
+        // Sort IDs array via its product to set advansed and then plus order
+        if (is_array($virtualProductIDs)) {
+
+            switch_to_blog(getBlogIdByIp());
+            $array = $virtualProductIDs;
+
+            foreach ($virtualProductIDs as $key => $id) {
+                global $product;
+                $product = new WC_Product($id);
+
+                if (strpos($product->post->post_name, 'advanced-annual') !== false) {
+                    $temp = array($key => $array[$key]);
+                    unset($array[$key]);
+                    $array = $temp + $array;
+                }
+
+            }
+            $virtualProductIDs = $array;
+            restore_current_blog();
+        }
+        ?>
+
+        <?php if (is_array($virtualProductIDs)) : ?>
+            <?php $dtNow = new DateTime(); ?>
+
+            <?php foreach ($virtualProductIDs as $id): ?>
+                <?php
+                switch_to_blog(getBlogIdByIp());
+                global $product;
+                $product = wc_get_product($id);
+
+                if ($product->get_post_data()->post_status == 'private') {
+                    if (!wp_get_current_user()->has_cap('admin')) {
+                        continue;
+                    }
+                }
+
+                $nalpeiron_profilename_old = $product->get_attribute('nalpeiron_profilename_old');
+                $upgrade_licenses = [];
+                if ($nalpeiron_profilename_old) {
+                    foreach ($blog as $blog_id => $uniqueLicenseCodes) {
+                        switch_to_blog($blog_id);
+                        $uniqueLicenseCodes = $uniqueLicenseCodes['uniqueLicenseCodes'];
+                        foreach ($uniqueLicenseCodes as $item) {
+                            $subscriptions = WC_Subscriptions_Manager::get_users_subscriptions(get_current_user_id(), [$item['order_id']]);
+                            if (!empty ($item['license']['subscriptionenddate'])){
+                                $expiredDate = new DateTime($item['license']['subscriptionenddate']);
+                                $expiredTs = $expiredDate->getTimestamp();
+                            } else {
+                                $expiredTs = 0;
+                            }
+                            $notExpired = ($expiredTs > $dtNow->getTimestamp()) || empty ($item['license']['subscriptionenddate']);
+                            if (
+                                isset($item['license']['profile']) && $item['license']['profile'] == $nalpeiron_profilename_old
+                                && ($subscriptions[$item['order_id'].'_'.$item['product_id']]['status'] == 'active')
+                                && ($item['license']['enabledforuse'] == 1)
+                                && ($notExpired)
+                            )
+                            {
+                                $upgrade_licenses[] = $item;
+                            }
+                        }
+                        restore_current_blog();
+                    }
+                }
+                ?>
+
+                <?php
+                switch_to_blog(getBlogIdByIp());
+                ?>
+                <?php if (!$nalpeiron_profilename_old || count($upgrade_licenses)): ?>
+                    <div class="block buy-now" data-name="<?= $product->post->post_name; ?>">
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <?= $product->get_image('thumbnail') ?>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <?php
+                                    $grouped = $product->is_type('grouped');
+                                    $parentProduct = wc_get_product($product->get_parent());
+                                    $Title = $grouped? $parentProduct->get_title()."&nbsp;&#x2192;&nbsp;".$product->get_title():$product->get_title();
+                                    ?>
+                                    <h4><a href="<?= $product->get_permalink() ?>"><?= $Title; ?></a></h4>
+
+                                    <?php if (count($upgrade_licenses)): ?>
+                                        <!--upgrade-->
+                                        <?php f3d_template_single_price(); ?>
+                                        <?php if ($product->is_in_stock()) : ?>
+
+                                            <?php do_action('woocommerce_before_add_to_cart_form'); ?>
+                                            <form class="cart" action="<?= $quickBuy ?>" method="post" enctype='multipart/form-data'>
+
+                                                <?php _e('License to be upgraded', 'storefront'); ?>
+                                                <select id="upgrade_selectbox" name="<?= NALPEIRON_HIDDEN_LICENSE_CODE ?>">
+                                                    <option value=""><?php _e('Select license to be upgraded', 'storefront'); ?></option>
+                                                    <?php foreach ($upgrade_licenses as $upgrade_license): ?>
+                                                        <option value="<?= $upgrade_license['code'] ?>"><?= Nalpeiron::licenseEncode($upgrade_license['code']) ?></option>
+                                                    <?php endforeach; ?>
+                                                </select>
+                                                <?= apply_filters('the_content', $product->post->post_content); /* the_content() */ ?>
+
+                                                <input type="hidden" name="quick-buy" value="<?= $product->id ?>">
+                                                <button id="upgrade_button" type="submit" class="single_add_to_cart_button btn btn-secondary pull-right">
+                                                    <?php _e('Upgrade!', 'storefront'); ?>
+                                                </button>
+                                                <?php do_action('woocommerce_after_add_to_cart_button'); ?>
+                                            </form>
+                                            <?php do_action('woocommerce_after_add_to_cart_form'); ?>
+                                        <?php endif; ?>
+                                    <?php else: ?>
+                                        <!--buy-->
+                                        <?= apply_filters('the_content', $product->post->post_content); ?>
+                                        <?php f3d_template_single_price(); ?>
+                                        <?php //wc_get_template('single-product/add-to-cart/portal.php'); ?>
+                                        <form class="cart" action="<?= $quickBuy ?>" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="quick-buy" value="<?= $product->id ?>">
+                                            <button type="submit" class="single_add_to_cart_button btn btn-secondary pull-right"><?php _e('Buy now!', 'storefront'); ?></button>
+                                        </form>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php restore_current_blog(); ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+
+    <?php switch_to_blog(1); ?>
+    <div class="col-sm-12 col-md-3 col-lg-4">
+
+        <div class="customer-details">
+
+            <form method="post" action="<?php echo plugins_url('fuel3d-distributors/allocate-serial-number.php'); ?>">
+                <div class="form-group">
+                    <div class="form-control-wrapper">
+                        <input type="text" class="form-control" placeholder="<?php _e('Enter serial number here', 'storefront') ?>">
+                        <span class="help-block form-error" style="display:none;"><?php _e('Invalid serial number', 'storefront'); ?></span>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary btn-block btn-add-serial">+ <?php _e('Add Serial', 'storefront') ?></button>
+                </div>
+            </form>
+            <p class="no-serial"><?php _e('You can find your serial number on your product box and on your SCANIFY device. Its starts with the number 6.', 'storefront') ?></p>
+
+            <hr>
+
+            <h3 data-name="section-serial-numbers"><?php _e('Serial Numbers', 'storefront'); ?></h3>
+
+            <?php if ($userSerials): ?>
+                <ul class="license" data-remove-url="<?php echo plugins_url('fuel3d-distributors/unassign-serial-number.php'); ?>">
+                    <?php foreach ($userSerials as $serial): ?>
+                        <li>
+                            <?= $serial ?>
+                            <a title="Unassign" href="#" class="remove-serial tooltip_off" data-serial="<?= $serial ?>"><i class="icon-error"></i></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php else : ?>
+                <ul class="license" data-remove-url="<?php echo plugins_url('fuel3d-distributors/unassign-serial-number.php'); ?>">
+                </ul>
+                <p class="no-serial"><?php _e('You currently have no serial numbers added', 'storefront') ?></p>
+            <?php endif ?>
+
+            <hr>
+
+            <h3 data-name="section-software-downloads"><?php _e('Software Downloads', 'storefront') ?></h3>
+
+            <div class="software-downloads">
+                <?php if ($userSerials): ?>
+                    <?php echo \MVC\Models\Portal::instance()->studio_download_link() ?>
+                <?php else : ?>
+                    <?php _e('To gain access to Fuel3D Studio software, you must register your SCANIFY serial number above', 'storefront') ?>
+                <?php endif ?>
+            </div>
+        </div>
+    </div>
+    <?php restore_current_blog(); ?>
+</div>
+
+<script>
+
+    window.user_id = <?= get_current_user_id() ?>;
+
+    function scrollTo(id) {
+
+        var target = jQuery('[data-name]').filter(function () {
+            var object = jQuery(this).data("name");
+            if (object.indexOf(id) > -1) {
+                return object;
+            } else {
+                return false;
+            }
+        });
+
+        if (target[0]) {
+            jQuery('html, body').animate({scrollTop: target[0].offsetTop + 280}, 'slow');
+        }
+
+        return false;
+    }
+
+    jQuery("#top_section_1").click(function () {
+        scrollTo('software-downloads');
+    });
+
+    jQuery("#top_section_2").click(function () {
+        scrollTo('plus-annual');
+    });
+
+    jQuery("#top_section_3").click(function () {
+        scrollTo('advanced-annual');
+    });
+
+</script>

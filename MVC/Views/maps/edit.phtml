@@ -1,0 +1,66 @@
+<?php
+/**
+ * @var \MVC\Controllers\MapsController $context
+ * @var array $markers
+ */
+
+\MVC\View::addJS('https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry');
+if (WP_DEBUG) {
+    \MVC\View::addJS('maps/geocomplete/jquery.geocomplete.js');
+} else {
+    \MVC\View::addJS('maps/geocomplete/jquery.geocomplete.min.js');
+}
+\MVC\View::addJS('maps/edit.js');
+if ($context->isAdmin()) {
+    \MVC\View::addCSS('maps/admin.css');
+}
+
+$action = '';
+?>
+<div class="well distributor-home clearfix">
+
+    <div class="markers">
+        <h3>Add Pins on the map</h3>
+
+        <?php if ($context->isAdmin()): ?>
+            <div>
+                User email:
+                <?php
+                $user = $context->getUser();
+                echo $user->user_email;
+                ?>
+            </div>
+            <hr/>
+        <?php endif; ?>
+
+        <div class="edit_markers">
+            <?php
+            echo \MVC\Controller::factory('Maps')->render('editMarkers');
+            ?>
+        </div>
+
+        <hr>
+
+        <form id="frm_addr" method="post" action="<?= $action ?>">
+
+            <input name="user_id" type="hidden" value="<?= $context->getUserId() ?>"/>
+
+            <div class="form-group">
+                <label>Pin Address:</label>
+                <input maxlength="1000" required="required" type="text" id="addr" name="addr" placeholder="Address"/>
+            </div>
+            <div class="form-group">
+                <label>Pin Email:</label>
+                <input maxlength="255" type="email" id="email" name="email" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <label>Pin Info:</label>
+                <textarea maxlength="1000" id="info" name="info" placeholder="Info"></textarea>
+            </div>
+            <input name="lat" type="hidden"/>
+            <input name="lng" type="hidden"/>
+            <input name="formatted_address" type="hidden"/>
+            <input type="submit" id="add" disabled="disabled" class="btn btn-secondary button button-primary" value="Add Pin"/>
+        </form>
+    </div>
+</div>

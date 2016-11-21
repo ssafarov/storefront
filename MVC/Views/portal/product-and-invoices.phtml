@@ -1,0 +1,49 @@
+<?php
+//$scanner_price_heading = get_post_custom_values('product_price_heading', $scanner->id)[0];
+//$target_price_heading  = get_post_custom_values('product_price_heading', $target->id)[0];
+//$scanner_subheading    = get_post_custom_values('product_subheading', $scanner->id)[0];
+/**
+ * @var array $quickBuyProducts
+ * @var array $quickBuyIDs
+ * @var string $quickBuy
+ * @var array $info
+ */
+?>
+    <!-- @start accordion -->
+    <h1><?php _e('My timeline', 'storefront'); ?></h1>
+    <div class="panel-group accordion" id="accordion-timeline" role="tablist" aria-multiselectable="true">
+        <?= $info['events']->toHtml(); ?>
+    </div><!-- @end .accordion -->
+
+    <h3><?php _e('Recommended for you', 'storefront'); ?></h3><br>
+<?php foreach ($quickBuyProducts as $key => $product) : ?>
+    <?php if ($product->post) : ?>
+        <div class="recommended_product well">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="<?= $product->get_permalink(); ?>">
+                        <?= $product->get_image('thumbnail', [
+                            'class' => 'img-responsive',
+                        ]) ?>
+                    </a>
+                </div>
+                <div class="details col-xs-8">
+                    <h5><a href="<?= $product->get_permalink(); ?>"><?= $product->get_title() ?></a></h5>
+
+                    <p><?php echo apply_filters('the_excerpt', $product->get_post_data()->post_excerpt); ?></p>
+
+                    <div class="price">
+                        <h6><?php echo get_post_custom_values('product_price_heading', $product->id)[0]; ?></h6>
+                        <sup><?php echo get_woocommerce_currency_symbol(); ?></sup>
+                        <span class="amount"><?php echo $product->get_price(); ?></span>
+
+                        <form class="cart has-validation-callback" action="<?php echo $quickBuy ?>" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="quick-buy" value="<?php echo $quickBuyIDs[$key]; ?>">
+                            <button type="submit" class="single_add_to_cart_button btn btn-primary"><?php _e('Quick buy', 'storefront'); ?></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>

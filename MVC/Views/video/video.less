@@ -1,0 +1,163 @@
+@import "../../../less/bootstrap/variables.less";
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+}
+
+#vid_h1 {
+  margin: 40px 0;
+}
+
+#video_container {
+  margin-left: 44px;
+
+  #video_iframe {
+    float: left;
+    margin-right: 20px;
+  }
+
+  #video_description {
+    float: left;
+    font-size: 14px;
+    width: 300px;
+    max-width: 100%;
+  }
+}
+
+#vid_slide_container {
+  margin-left: 0;
+  margin-top: 50px;
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    td.prev,
+    td.next {
+      cursor: pointer;
+      vertical-align: top;
+      padding-top: 1px;
+      width: 45px;
+
+      color: #c9c9c9;
+      font-size: 70px;
+      &.inactive {
+        cursor: default;
+      }
+    }
+    td.next {
+      text-align: right;
+    }
+  }
+
+  .jcarousel {
+    img {
+      width: 200px;
+      height: 110px;
+    }
+    li {
+      width: 200px;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+// max
+#video_container {
+  iframe {
+    max-width: 100%;
+    width: 780px;
+    height: 438px;
+  }
+
+  // media
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    iframe {
+      width: 560px;
+      height: 315px;
+    }
+  }
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    iframe {
+      width: 355px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    iframe {
+      width: 320px;
+      height: 180px;
+    }
+  }
+}
+
+#help-support {
+  #video_container {
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+
+    // max
+    iframe {
+      max-width: 100%;
+      width: 980px; // 780
+      height: 551px; // 980 / 1,78
+    }
+
+    // media
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      iframe {
+        width: 761px;
+        height: 428px;
+      }
+    }
+
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      iframe {
+        width: 555px;
+        height: 312px;
+      }
+    }
+
+    @media (max-width: @screen-xs-max) {
+      iframe {
+        max-width: 100%;
+        width: 420px;
+        height: 236px;
+      }
+    }
+  }
+}

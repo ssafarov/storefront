@@ -1,0 +1,38 @@
+<h2>Data on who has Software Download</h2>
+<style>
+    #downloaded_studio td,
+    #downloaded_studio th {
+        padding: 5px 10px;
+    }
+</style>
+<table id="downloaded_studio">
+    <tr>
+        <th>login</th>
+        <th>email</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>date</th>
+        <th>amount downloads</th>
+    </tr>
+    <?php
+    /**
+     * @var array $result
+     */
+    foreach ($result as $item):
+        extract((array)$item);
+        ?>
+        <tr>
+            <td><a href="<?= site_url() . '/wp-admin/user-edit.php?user_id=' . $user_id ?>"><?= $login ?></a></td>
+            <td><?= $email ?></td>
+            <td><?= $fname ?></td>
+            <td><?= $lname ?></td>
+            <td><?= getDateLastSoftwareDownloadByEmail($email)?></td>
+            <td><?= $amount_downloaded ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+<form method="post">
+    <input type="hidden" name="export_downloaded_studio" value="1">
+    <input class="button button-primary" type="submit" value="csv"/>
+</form>
